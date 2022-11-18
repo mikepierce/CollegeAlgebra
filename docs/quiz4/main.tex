@@ -1,0 +1,258 @@
+%_______________________________________________________________________________
+% main.tex
+
+\input{preamble12.tex}
+\hypersetup{%
+    pdfauthor={Mike Pierce}%
+   ,pdftitle={Pop Quiz | Math 113}%
+   ,pdfkeywords={Pierce,CMU,Colorado,College Algebra,113}%
+   ,pageanchor=false%
+}
+\geometry{
+    margin=1in%
+   ,left=0.75in%
+   ,right=0.75in%
+}
+\usepackage{fourier}
+\usepackage[default]{comicneue}
+\input{accessible-colors.tex}
+\input{newcommand.tex}
+\input{newenvironment.tex}
+\pagenumbering{gobble}
+\usepackage{pagegrid}
+\pagegridsetup{
+    step=0.5in
+    ,firstcolor=blue
+    ,secondcolor=orange
+    ,foreground=true
+    ,disable
+}
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge{Pop Quiz}}
+    \\ Math 113-001/6 College Algebra
+    \\ Colorado Mesa University Fall 2022
+\end{center}
+
+\vspace{0.5in-2px}
+%\vspace{2em}
+%\textsc{Name}: \enspace \hrulefill
+%\vspace{1em}
+
+\begin{enumerate}
+
+    \item 
+        Below is a table reporting 
+        the US national debt\footnote{\href{https://fiscaldata.treasury.gov/datasets/historical-debt-outstanding/historical-debt-outstanding}{\texttt{fiscaldata.treasury.gov/datasets/historical-debt-outstanding}}},
+        presented in \emph{trillions} of dollars, for select years.
+        \par\begin{center}\begin{tabular}{r||c|c|c|c|c|c}
+            year                & 1992 & 2001 & 2007 & 2011 & 2017 & 2021 \\\hline
+            debt (in trillions) & 4.06 & 5.81 & 9.00 & 14.79 & 20.24 & 28.43 
+        \end{tabular}\end{center}
+        \begin{enumerate}
+            \item
+                Do you think an exponential model 
+                or a logarithmic model would fit the data best?
+                \vfill\null
+            \item
+                Based on your choice in the previous part, 
+                perform regression to find a function 
+                of \(t\) years after 1990 that models the data.
+                Write this function below with parameters (\(a\) and \(b\))
+                rounded to two decimal places.
+                (If you do not have a calculator capable of regression,
+                simply write ``no calc''
+                and circle whichever of these functions you think 
+                fits the data best.)
+                Use this function as your model 
+                for the remaining questions.
+                \par\(\displaystyle 3(1.07)^t \quad -4+7\ln\left(t\right) \quad 4(0.92)^t \quad 2+4.06\ln\left(t\right)\)
+            \item
+                What does your model predict 
+                the national debt this year to be?
+                \vfill\null
+                \vfill\null
+            \item
+                The actual national debt this year is
+                about 30.93 trillion dollars.
+                What is the difference between this figure 
+                and your model's prediction?
+                \vfill\null
+                \vfill\null
+            \item
+                According to your model, 
+                when will the national debt be
+                one quadrillion (1000 trillion) dollars?
+                % \log_{1.0721}\frac{1000}{3.1146}  2073
+                \vfill\null
+                \vfill\null
+                \vfill\null
+                \vfill\null
+        \end{enumerate}
+
+        \newpage
+
+    %\item 
+    %    Annuities
+    %    \vfill\null
+
+    \item 
+        Coloramo Credit Union offers \emph{Certificates of Deposit} (CDs)
+        to its account holders\footnote{\href{https://www.coloramo.org/rates/\#certificate}{\texttt{coloramo.org/rates/\#certificate}}}.
+        A CD is a special account where you deposit 
+        a certain amount of cash and promise
+        not to withdraw that cash for a pre-determined amount of time.
+        In return for this promise the credit union offers you a higher interest rate
+        than they do for a typical savings account.
+        \begin{enumerate}
+            \item
+                Coloramo offers a four-year CD with a 1.837\% interest rate
+                compounded quarterly (once every three months).
+                If you invest \$1000 into this CD,
+                how much will your CD be worth after those four years?
+                \vfill\null
+            \item
+                How much more would the CD be worth 
+                if instead of compounding the interest quarterly
+                Coloramo compounded the interest every month?
+                \vfill\null
+            \item
+                How much more would the CD be worth 
+                if instead of compounding the interest quarterly
+                Coloramo compounded the interest \emph{continually}?
+                \vfill\null
+            \item
+                Suppose you plan on graduating college in four years.
+                You're living on campus now, so you don't have a car, 
+                but you know you'll need a car to commute to work after you graduate.
+                You estimate that \$21,000 should be enough to buy an adequate car
+                in four years when you graduate, and figure why not
+                deposit some money into Coloramo's four-year CD 
+                and collect that \$21,000 in four years.
+                How much money should you deposit in Coloramo's four year CD
+                such that after four years it will be worth \$21,000?
+                \vfill\null
+                \vfill\null
+                \vfill\null
+        \end{enumerate}
+
+\end{enumerate}
+
+\newpage
+
+%\begin{center}
+%    {\Huge{Pop Quiz Five}}
+%    \\ Math 113-001/6 College Algebra
+%    \\ Colorado Mesa University Fall 2022
+%\end{center}
+%
+%\vspace{0.5in-2px}
+
+The table gives the life expectancy (life span)
+for people in the United States for select birth years
+from 1920 and through 2018\footnote{\href{https://www.cdc.gov/nchs/data-visualization/mortality-trends/}{cdc.gov/nchs/data-visualization/mortality-trends}}.
+%from 1920 and through 2020\footnote{Pearson: National Center for Health Statistics}.
+
+\begin{minipage}[t]{0.8\textwidth}
+    \begin{enumerate}
+        \item
+    Using technology, perform regression to
+            find a logarithmic function \(f(t) = a + b\ln(t)\) 
+    that models the data,
+    with \(t\) equal to \(0\) in 1900.
+
+        \item
+    Using technology, perform regression to
+    find a power model \(g(t) = a\cdot b^t\) 
+    that models the data,
+    with \(t\) equal to \(0\) in 1900.
+
+        \item
+            Using technology,
+    plot the graphs of each of these functions
+    along with the data on the same set of axis
+    and decide which model fits the data best. 
+    On your plot make sure the domain of \(t\)
+    matches up with the years 1920--2030.
+
+\item 
+    What does the model that you decided 
+            fits the data best predict your own life expectancy to be?
+
+\item 
+    What does the model that you decided 
+            fits the data best predict 
+            the life expectancy of a baby born today to be?
+
+\item 
+    What year does the logarithmic model
+    predict will be the year life expectancy is 80 years?
+
+\item 
+    In the years since 2018, 
+    life expectancy in the US has started to decline\footnotemark.
+            This is suspected to be due to the \textsc{COVID}-19 pandemic.
+            Someone born in the US in 2019, 2020, and 2021 
+            has a life expectancy of 79 years, 77 years, and 76.1 years respectively.
+            Add this new data to the data set.
+
+            Both logarithmic and power functions are increasing functions.
+            Since life expectancy is decreasing in recent years though,
+            these functions may no longer provide the most accurate models.
+            What's a type of function that more accurately models
+            data that initially increases, but then begins to decrease?
+            Using technology, perform regression to
+            find such function \(h(t)\) 
+            that models the data,
+            again with \(t\) equal to \(0\) in 1900.
+
+\item 
+    What does this new model predict
+            the life expectancy of a baby born today to be?
+            How does this compare to the figure predicted
+            by either your logarithmic or power model?
+
+    \end{enumerate}
+
+\end{minipage}
+\footnotetext{\href{https://www.npr.org/sections/health-shots/2022/08/31/1120192583/}{npr.org/sections/health-shots/2022/08/31/1120192583}}.
+\hspace{1em}
+\begin{minipage}[t]{0.19\textwidth}
+\par\begin{center}\begin{tabular}{l|l}
+Year & Life Span \\\hline
+    1920 & 54.1 \\
+    1930 & 59.7 \\
+    1940 & 62.9 \\
+    1950 & 68.2 \\
+    1960 & 69.7 \\
+    1970 & 70.8 \\
+    1975 & 72.6 \\
+    1980 & 73.7 \\
+    1987 & 75.0 \\
+    1988 & 74.9 \\
+    1989 & 75.2 \\
+    1990 & 75.4 \\
+    1992 & 75.8 \\
+    1994 & 75.7 \\
+    1996 & 76.1 \\
+    1998 & 76.7 \\
+    1999 & 76.7 \\
+    2000 & 76.8 \\
+    2001 & 77.2 \\
+    2002 & 77.0 \\
+    2003 & 77.6 \\
+    2004 & 77.5 \\
+    2005 & 77.6 \\
+    2010 & 78.7 \\
+    2015 & 78.7 \\
+    2016 & 78.7 \\
+    2017 & 78.6 \\
+    2018 & 78.7
+\end{tabular}\end{center}
+\end{minipage}
+
+\end{document}
+
