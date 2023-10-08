@@ -1,0 +1,41 @@
+reset
+set autoscale
+set samples 2048
+set xtics axis scale 1,0.33 offset 0,0.33 5
+set mxtics 4
+set xlabel "Week \\(t\\) of the Year 2022"
+set ytics axis scale 1,0.33 5
+set mytics 4
+#set ylabel "Stock Price of Twitter (in USD)"
+set xrange [0:46]
+set yrange [32:56]
+set zeroaxis linewidth 1 linecolor "#a0a0a0" linetype 1
+set grid noxtics noytics front ### to get xtics/ytics labels in front
+
+# X and Y axis labels
+set label front "\\(x\\)" at graph 1, first 0 offset char 2, char 0 right font 'Courier Bold,12' 
+set label front "\\(y\\)" at first 0, graph 1 offset char 0, char 1 center font 'Courier Bold,12' 
+set rmargin 3
+set tmargin 2
+set lmargin 3
+
+set key at 20,52 ### position of the key
+set border 0
+set style fill transparent solid 0.5
+
+### 4:3 Aspect Ratio to PDF
+# set terminal epslatex size 6.5in,4.875in standalone header "\\usepackage{fourier}" 
+# set output "main.tex"
+
+### 2:1 Aspect Ratio to PDF
+set terminal epslatex size 6.5in,3.25in standalone header "\\usepackage{fourier}" 
+set output "main.tex"
+
+### 5:2 Aspect Ratio to PDF
+#set terminal epslatex size 6.5in,2.6in standalone header "\\usepackage{fourier}" 
+#set output "main.tex"
+
+f(x) = (0.00000030962)*x**6 + (-0.0000496972)*x**5 + (0.00312264)*x**4 + (-0.094529)*x**3 + (1.36961)*x**2 + (-7.90472)*x**1 + (48.5865)
+#f(x) = (-0.0000000059618)*x**8 + (0.00000110898)*x**7 + (-0.0000845133)*x**6 + (0.00338658)*x**5 + (-0.759722)*x**4 + (0.935142)*x**3 + (-5.71581)*x**2 + (13.9741)*x**1 + (28.4337)
+plot f(x) title "\\(y = C(t)\\)"
+

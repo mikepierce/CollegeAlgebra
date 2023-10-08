@@ -6,7 +6,7 @@
 This is the schedule/outline 
 for my ~16week general education college algebra course.
 It’s augmented with links to notes, video lectures, 
-exercises, demonstrations in Desmos,
+practice exercises and problems, demonstrations in Desmos,
 and some extra-curricular digressions.
 The primary narrative follows 
 [*College Algebra 6ed*, by Harshbarger and Yocco](https://www.pearson.com/en-us/subject-catalog/p/college-algebra-in-context-with-applications-for-the-managerial-life-and-social-sciences/P200000006206).

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Math113 Systems of Linear Equations | Mike Pierce</title>
+    <meta name="author" content="Mike Pierce">
+
+    <link rel="shortcut icon" type="image/png" href="../../assets/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="all" href="../../assets/main.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <style>@media only print { body {margin:0.25in 1.1in 0.25in 1.1in; width:auto; font-size:12pt;} main {column-count:1;} h1 {font-size:2.33em;} } </style>
+    <style>body{background-image:linear-gradient(transparent, var(--background)), url("../banner.webp");}</style>
+</head>
+
+<body>
+<header>
+    <h1>Systems of Linear Equations</h1>
+</header>
+
+<main>
+<ol>
+    <li>
+        Janet has $123,000 cash that she’d like to invest.
+        She’s researched two different investments accounts:
+        <ul>
+            <li>
+                A money-market fund offered by her local credit union
+                that guarantees a 6.9% annual return.
+            </li>
+            <li>
+                A high risk mutual fund that is <em>projected</em>
+                to net 7.7% annual return.
+            </li>
+        </ul>
+        She wants to balance her investment between these two funds
+        to get an expected return of 7.2%. 
+        How should should split up her principal investment
+        between these two funds?
+        <details class="solution">
+            <summary>Answer</summary>
+            Letting \(A\) be the amount she invests in the money-market fund
+            and \(B\) be the amount she invests in the mutual fund,
+            we can write two equations:
+            one about the total principal (how much money she has to invest),
+            and another equation about the interest she expects.
+            Then the answer we seek is the solution to the system
+            \[
+            \begin{cases}
+            A &+&B &=& 123000
+            \\0.069A &+&0.077B &=& 8865
+            \end{cases} \,.
+            \]
+            Solving this system, we calculate that 
+            she should put $76,875 in the money-market fund
+            and $46,125 in the mutual fund.
+        </details>
+    </li>
+    <li>
+        <a href="https://www.wolframalpha.com/input?i=sugar+in+mountain+dew">Mountain Dew</a>™ contains 3.875g sugar per fluid ounce,
+        whereas <a href="https://www.wolframalpha.com/input?i=sugar+in+orange+juice">orange juice</a> contains about 2.625g sugar per fluid ounce.
+        How many fluid ounces of each would you need to mix 
+        to get a gallon (128 fl.oz.) of a delicious drink 
+        that has 3g sugar per fluid ounce?
+        <details class="solution">
+            <summary>Answer</summary>
+            Letting \(D\) be the number of ounces of Mountain Dew
+            and \(J\) be the number of ounces of orange juice,
+            we’ll write one equation relating the total amount of fluid we want,
+            and another equation relating the total amount of sugar we want.
+            Then the answer we seek is the solution to the system
+            \[
+            \begin{cases}
+            D &+& J &=& 128
+            \\ 3.875D &+& 2.625J &=& 384
+            \end{cases}\,.
+            \]
+            Solving this system, we calculate that 
+            we’ll need \(D = 38.4\) fluid ounces of Mountain Dew
+            and \(J = 89.6\) fluid ounces of orange juice.
+        </details>
+    </li>
+    <li>
+        My bro Mikey is on a very special diet of bananas and watermelons.
+        He also holds himself to a very strict dietary requirement
+        of getting 37.5g of fiber and 214.4g of sugar per day.
+        <aside>
+            Note: this is a healthy amount of fiber,
+            but concerning his sugar intake, 
+            I suspect Mikey has a problem.
+        </aside>
+        <ul>
+            <li>
+                One <a href="https://www.healthline.com/nutrition/foods/bananas#nutrition">average-sized banana</a>
+                contains about 12.2g of sugar and 2.6g of fiber.
+            </li>
+            <li>
+                One <a href="https://www.healthline.com/nutrition/foods/watermelon#nutrition">cup of watermelon</a>
+                contains about 9.3g of sugar and 0.6g of fiber.
+            </li>
+        </ul>
+        How many bananas and cups of watermelons 
+        must Mikey eat per day to meet his dietary requirement?
+        <details class="solution">
+            <summary>Answer</summary>
+            Let \(B\) be the number of bananas
+            and let \(W\) be the number of cups of watermelon
+            that Mikey plans to eat.
+            Writing one equation relating to Mikey’s fiber intake
+            and another relating to his sugar intake,
+            the answer we seek is the solution to the system
+            \[
+            \begin{cases}
+            2.6B &+&0.6W &=& 37.5
+            \\ 12.2B &+&9.3W &=& 214.4
+            \end{cases} \,.
+            \]
+            Solving this system, we calculate that 
+            he needs to eat \(B=13\) bananas
+            and \(W=6\) cups of watermelon per day.
+        </details>
+    </li>
+    <li>
+        The drugs Aryzindrid and Boquaflox are each designed to treat 
+        the rare medical condition oxyfloxridomosis.
+        Aryzindrid is a newer drug, 
+        while Boquaflox has been prescribed since the mid 90s.
+        <ul>
+            <li>
+                At the beginning of last year, 
+                Aryzindrid only had a 1.5% share of the oxyfloxridomosis treatment market.
+                However the manufacturers of Aryzindrid 
+                funded a huge marketing campaign and by the end of last year
+                Aryzindrid’s market share was 62.3%!
+            </li>
+            <li>
+                Boquaflox had 81.1% market share at the beginning of last year,
+                but after the marketing push by the makers of Aryzindrid, 
+                it dropped to a 23.7% share by the end of the year.
+            </li>
+        </ul>
+        <p>
+            At what average rate <em>per week</em> 
+            did Aryzindrid gain market share last year?
+            At what average rate <em>per week</em> 
+            did Boquaflox lose market share last year?
+            (Remember there are fifty-two weeks in a year.)
+        </p>
+        <details class="solution">
+            <summary>Answer</summary>
+            \[
+            \frac{62.3\% - 1.5\%}{52\text{ weeks}} \approx 1.17\%\text{ per week}
+            \qquad
+            \frac{23.7\% - 81.1\%}{52\text{ weeks}} \approx -1.1\%\text{ per week}
+            \]
+        </details>
+        <p>
+            Assuming the market share of each drug 
+            changed linearly throughout the year —
+            i.e. each function of their market shares over time 
+            can be approximated as a linear equation —
+            what week during the year did the two drugs
+            have the same market share?
+        </p>
+        <details class="solution">
+            <summary>Answer</summary>
+            Writing down the linear equations for 
+            each their market shares,
+            the answer we seek is the \(t\)-coordinate
+            of the solution to this system of equations:
+            \[
+            \begin{cases}
+            y &= 1.17t + 1.5
+            \\ y &= -1.1t + 81.1
+            \end{cases}
+            \]
+            (Remember the units on \(y\) are \(\%\).)
+            Solving this system, we calculate that 
+            \(t \approx 35\), so their market shares were the same
+            at the thirty-fifth week.
+            At this week, \(y \approx 42.53\%\),
+            so this was their market share at this time.
+        </details>
+    </li>
+</ol>
+</main>
+</body>
+
+</html>
+

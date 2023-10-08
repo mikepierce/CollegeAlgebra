@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Math113 Functions and Models | Mike Pierce</title>
+    <meta name="author" content="Mike Pierce">
+
+    <link rel="shortcut icon" type="image/png" href="../../assets/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="all" href="../../assets/main.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <style> @media only print { body {margin:0.33in 0.67in 0.33in 0.67in; width:auto; font-size:12pt;} main {column-count:1;} h1 {font-size:2em;} } </style>
+    <style>body{background-image:linear-gradient(transparent, var(--background)), url("../banner.webp");}</style>
+</head>
+
+<body>
+<header>
+    <h1>Functions &amp; Models</h1>
+</header>
+
+<main>
+<div class="name print"></div>
+<ol>
+    <li>
+        For each of the following depictions of a function,
+        do these four things: 
+        determine the output corresponding to an input of \(3,\)
+        determine the output corresponding to an input of \(-1,\)
+        describe the domain, and describe the range.
+        <ol>
+            <li>
+                The graph \(y = f(x):\)
+                <figure>
+                <img width="216" src="img/simple-plot/out.png">
+                <div class="hfill"></div>
+                </figure>
+            </li>
+            <li class="skip-half">
+                A table of <em>all</em> input/output pairs
+                of a function \(\ell:\)
+                <figure>
+                <table>
+                <tbody>
+                    <tr> 
+                        <th>input \(x\)</th> 
+                        <td>-3</td>  
+                        <td>-2</td>  
+                        <td>-1</td> 
+                        <td>0</td> 
+                        <td>1</td>  
+                        <td>2</td>  
+                        <td>3</td>  
+                    </tr>
+                    <tr> 
+                        <th>output \(\ell(x)\)</th> 
+                        <td>18</td> 
+                        <td>531</td>
+                        <td>341.1</td>
+                        <td>-90</td>
+                        <td>6013</td>
+                        <td>-6</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+                </table>
+                <div class="hfill"></div>
+                </figure>
+            </li>
+            <li class="skip-one">
+                A function \(M\) defined explicitly
+                in terms of a formula: \(M(x) = x^3 - 10x + 7\)
+            </li>
+        </ol>
+    </li>
+    <li class="skip-page">
+        This table of input/output values 
+        <em>supposedly</em> describes a function \(f,\)
+        but there’s a problem. What’s the problem?
+        Why isn’t \(f\) really a function?
+        <figure>
+        <table>
+        <tbody>
+            <tr> 
+                <th>input \(x\)</th> 
+                <td>-1</td>  
+                <td>4</td>  
+                <td>-3</td>  
+                <td>-9</td>  
+                <td>1</td> 
+                <td>0</td> 
+                <td>12</td>  
+                <td>-7</td>  
+                <td>3</td>  
+                <td>4</td>  
+                <td>…</td> 
+            </tr>
+            <tr> 
+                <th>output \(f(x)\)</th> 
+                <td>1</td> 
+                <td>18</td> 
+                <td>-5</td> 
+                <td>31</td>
+                <td>-9</td>
+                <td>12</td>
+                <td>4</td>
+                <td>4</td>
+                <td>43</td>
+                <td>9</td>
+                <td>…</td>
+            </tr>
+        </tbody>
+        </table>
+        </figure>
+    </li>
+    <li class="skip-page">
+        Every morning, for the first two weeks of last month, 
+        Clapton weighed himself and recorded his weight (in lbs)
+        in the table below.
+        <figure>
+        <table>
+        <tbody>
+            <tr> 
+                <th>Day</th> 
+                <td>1</td>  
+                <td>2</td>  
+                <td>3</td>  
+                <td>4</td>  
+                <td>5</td> 
+                <td>6</td> 
+                <td>7</td>  
+                <td>8</td>  
+                <td>9</td>  
+                <td>10</td>  
+                <td>11</td>  
+                <td>12</td>  
+                <td>13</td>  
+                <td>14</td>  
+            </tr>
+            <tr> 
+                <th>Weight</th> 
+                <td>177</td>  
+                <td>177</td>  
+                <td>176</td>  
+                <td>177</td>  
+                <td>176</td> 
+                <td>174</td> 
+                <td>174</td>  
+                <td>173</td>  
+                <td>174</td>  
+                <td>174</td>  
+                <td>173</td>  
+                <td>170</td>  
+                <td>172</td>  
+                <td>171</td>  
+            </tr>
+        </tbody>
+        </table>
+        </figure>
+        <ol>
+            <li class="skip-one">
+                Does the data in this data describe Clapton’s weight 
+                as a function of time?
+                What did you have to check to answer  this?
+            </li>
+            <li class="skip-half">
+                How much did Clapton weight
+                on the 11<sup>th</sup> day of the month?
+            </li>
+            <li class="skip-half">
+                On what day(s) did Clapton weight 173lbs?
+            </li>
+            <li class="skip-half">
+                Between which pairs of days
+                did Clapton lose the most weight?
+            </li>
+            <li class="skip-one">
+                How much total weight did Clapton lose
+                over those fourteen days? 
+            </li>
+            <li class="skip-one hard">
+                On average, how much weight did Clapton lose per day?
+            </li>
+        </ol>
+    </li>
+    <li class="skip-page">
+        Below is the graph of a function \(y = C(t)\)
+        that models the price (USD) of Twitter (TWTR) stock 
+        at the end of the \(t\)<sup>th</sup> week of 2022, 
+        leading up to October 27th (\(t = 44\))
+        when Elon Musk bought it and it was de-listed from the NYSE.
+        <figure> <img width="540" src="img/twitter/out.png"> </figure>
+        <ol>
+            <li class="skip-half">
+                If the domain of the function \(C\) is \(0 \lt t \leq 44,\)
+                what is the range of the function?
+            </li>
+            <li class="skip-one">
+                Estimating, what is the value of \(C(17),\)
+                and what does this value mean in the context of the model?
+            </li>
+            <li class="skip-half">
+                Estimating, for what week(s) of 2022
+                was the price of Twitter stock $40?
+            </li>
+            <li class="skip-one">
+                According to this model, 
+                during what <em>months</em> of 2022 
+                was the price of Twitter’s stock increasing?
+            </li>
+        </ol>
+    </li>
+    <li>
+        If a ball is thrown into the air at 17 meters-per-second,
+        its height (in meters) measured \(t\) seconds after being released
+        can be modelled by the function
+        \[ h(t) = 1.7 + 17t - 4.9t^2 \,. \]
+        <ol>
+            <li class="skip-one">
+                What is the value of \(h(1),\)
+                and what does this value mean in the context of the model?
+            </li>
+            <li class="skip-half">
+                What is the height of the ball four seconds after being thrown?
+            </li>
+            <li class="skip-one">
+                When the ball comes back down and hits the ground,
+                its height will be zero meters.
+                Using technology, test other values of \(h(t)\)
+                to <em>estimate</em> how long after being thrown
+                the ball will hit the ground.
+            </li>
+            <li class="skip-one">
+                Using technology, test other values of \(h(t)\)
+                to <em>estimate</em> the highest the ball gets.
+            </li>
+        </ol>
+    </li>
+</ol>
+
+<h2>Puzzle</h2>
+<p>
+    Two brothers ran a hundred-meter race,
+    and the older brother won by three meters. 
+    In other words, when the older brother reached the finish line, 
+    the younger brother had run ninety-seven meters.
+    They decided to race again, this time with the older brother 
+    starting three meters behind the starting line. 
+    Assuming that both boys ran the second race at the same speed as before, 
+    was the second race a tie? Or did one of them win?
+</p>
+</main>
+</body>
+
+</html>
+
