@@ -26,25 +26,256 @@
 <div class="name print"></div>
 <ol>
     <li>
-        TK
+        Consider the logistic function defined by the formula
+        \[ \ell(x) = \frac{530}{1+8\mathrm{e}^{-0.02x}}\,. \]
+        <ol>
+            <li class="skip-half">
+                What is the domain and range of the function \(\ell\,?\)
+            </li>
+            <li class="skip-one-half">
+                What is the value of \(\ell(200)\,?\)
+                Write down an exact expression for the value,
+                but also express the value as a decimal 
+                rounded to three decimal places.
+            </li>
+            <li class="skip-page">
+                For what value(s) of \(x\) does \(\ell(x) = 100\,?\)
+                Write down an exact expression for the value(s),
+                but also express the value(s) as a decimal 
+                rounded to three decimal places.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Consider the Gompertz function defined by the formula
+        \[ g(x) = 530(0.1)^{\left(0.96^x\right)} \]
+        <ol>
+            <li class="skip-half">
+                What is the domain and range of the function \(g\,?\)
+            </li>
+            <li class="skip-one-half">
+                What is the value of \(g(50)\,?\)
+                Write down an exact expression for the value,
+                but also express the value as a decimal 
+                rounded to three decimal places.
+            </li>
+            <li class="skip-page">
+                For what value(s) of \(x\) does \(g(x) = 300\,?\)
+                Write down an exact expression for the value(s),
+                but also express the value(s) as a decimal 
+                rounded to three decimal places.
+            </li>
+        </ol>
+    </li>
+    <li>
+        In March 2014,
+        the World Health Organization responded to a large outbreak
+        of Ebola in Western Africa.
+        Here is the data they reported for the 
+        total (cumulative) number of cases
+        in Guinea, Liberia, and Sierra Leone, 
+        by month for the first year and a half of the epidemic,
+        <a href="https://www.cdc.gov/vhf/ebola/history/2014-2016-outbreak/cumulative-cases-graphs.html">according to the CDC</a>:
+        <figure>
+        <table>
+        <tbody>
+            <tr> 
+                <th>Months since March 2014</th> 
+                <td>0</td> 
+                <td>1</td> 
+                <td>2</td> 
+                <td>3</td> 
+                <td>4</td> 
+                <td>5</td> 
+                <td>6</td> 
+                <td>7</td> 
+                <td>…</td> 
+            </tr>
+            <tr> 
+                <th>Total Ebola Cases</th> 
+                <td>120</td> 
+                <td>234</td> 
+                <td>309</td> 
+                <td>599</td> 
+                <td>1322</td> 
+                <td>3052</td> 
+                <td>6553</td> 
+                <td>13540</td> 
+                <td>…</td> 
+            </tr>
+        </tbody>
+        </table>
+        <table>
+        <tbody>
+            <tr> 
+                <td>…</td> 
+                <td>8</td> 
+                <td>9</td> 
+                <td>10</td> 
+                <td>11</td> 
+                <td>12</td> 
+                <td>13</td> 
+                <td>14</td> 
+                <td>15</td> 
+                <td>16</td> 
+                <td>17</td> 
+            </tr>
+            <tr> 
+                <td>…</td> 
+                <td>17099</td> 
+                <td>20371</td> 
+                <td>22257</td> 
+                <td>23894</td> 
+                <td>25378</td> 
+                <td>26498</td> 
+                <td>27345</td> 
+                <td>27740</td> 
+                <td>28040</td> 
+                <td>28265</td> 
+            </tr>
+        </tbody>
+        </table>
+        </figure>
+        The total number of cases could initially be 
+        accurately modelled by an exponential function.
+        But as the spread of the disease began to slow, 
+        and the data began to take on a <em>sigmoid</em> shape,
+        a different model was needed.
+        <ol>
+            <li class="skip-page">
+                Sketch a scatter plot of the data on the axes below.
+                (plan the scaling of your axes before you begin!)
+                <figure> <img width="864" src="img/axes-firstquad/out.png"> </figure>
+                Then using technology capable of regression,
+                ideally Desmos, find an equation \(P(t)\) 
+                for the <em>logistic</em> function
+                that best models this data,
+                and carefully sketch it on the plot.
+            </li>
+            <li class="skip-two">
+                One of the defining features of a logistic function
+                is that is has a strict upper-limit,
+                usually called the <em>carrying capacity</em>.
+                What is the upper-limit that your specific logistic model 
+                for this data indicates, and what is does this number mean 
+                in the context of the Ebola epidemic?
+            </li>
+            <li class="skip-page">
+                <p>
+                The <em>inflection point</em> of a logistic curve
+                is the point that is vertically half-way 
+                between zero and the upper-limit,
+                where the curve “turns” and begins to level-out.
+                I.e. it’s the point where the logistic function
+                stops increasing exponentially.
+                In relation to this situation,
+                the inflection point corresponds to the 
+                time when the number of <em>new</em> Ebola cases each month
+                starts to decrease rather than increase.
+                </p>
+                <p>
+                During which month after March 2014 
+                is the inflection point of our logistic model?
+                </p>
+            </li>
+            <li class="skip-one">
+                There’s an obvious inconsistency between the data
+                and the upper-limit this logistic model suggests; 
+                what is it?
+            </li>
+            <li>
+                <a href="https://www.cdc.gov/vhf/ebola/history/2014-2016-outbreak/cumulative-cases-graphs.html">According to the CDC</a>,
+                the final tally of Ebola cases in west Africa
+                once the pandemic was declared over, was \(28616.\)
+                With this fact in mind we can find a better model.
+                Plot the following Gompertz function 
+                along with your logistic model and the data 
+                to visually verify it’s a reasonable model
+                for the total number of Ebola cases.
+                \[ G(t) = 28616\mathrm{e}^{-18(0.65)^t} \]
+            </li>
+            <li class="skip-one-half">
+                (Extrapolate)
+                According to this Gompertz model, 
+                how many total Ebola cases will have been reported
+                by the 18<sup>th</sup> month since March 2014?
+            </li>
+            <li class="skip-page">
+                According to this Gompertz model, 
+                what month did the case-total hit \(28600?\)
+            </li>
+            <!--
+            <li class="hard">
+                PDF vs CDF
+                Fit a bell-curve to it?
+            </li>
+            -->
+        </ol>
+    </li>
+    <li>
+        Here is data 
+        <a href="https://www.census.gov/data/tables/time-series/dec/popchange-data-text.html">from the US Census Bureau</a>
+        for the population of the United States (in millions)
+        for select decades in the past century.
+        <figure>
+        <table>
+        <tbody>
+            <tr> 
+                <th>Year</th> 
+                <td>1920</td> 
+                <td>1930</td> 
+                <td>1940</td> 
+                <td>1950</td> 
+                <td>1960</td> 
+                <td>1970</td> 
+                <td>1980</td> 
+                <td>1990</td> 
+                <td>2000</td> 
+                <td>2010</td> 
+                <td>2020</td> 
+            </tr>
+            <tr> 
+                <th>US Pop. (millions)</th> 
+                <td>106</td> 
+                <td>123</td> 
+                <td>132</td> 
+                <td>151</td> 
+                <td>179</td> 
+                <td>203</td> 
+                <td>227</td> 
+                <td>249</td> 
+                <td>281</td> 
+                <td>309</td> 
+                <td>331</td> 
+            </tr>
+        </tbody>
+        </table>
+        </figure>
+        If you were to plot this data,
+        you’d notice that the data trends along
+        a very slight sigmoid-shaped curve,
+        as population data from high-income countries often does.
         <ol>
             <li>
-                TK
+                Find a logistic function to model 
+                the US population over time.
+                I recommend that to make your independent variable
+                something like “decades since 1920”.
             </li>
             <li>
-                TK
+                What is the upper-limit on the US population
+                that your logistic model suggests?
             </li>
             <li>
-            TK
+                What are the coordinates of the inflection point
+                of your logistic curve that models the population?
+                I.e. during what decade was the US population
+                growing the fastest?
             </li>
         </ol>
     </li>
 </ol>
 
-<h3>Puzzle</h3>
-<p>
-    <h4 class="screen"><a href="TK">TK</a></h4>
-</p>
 </main>
 </body>
 

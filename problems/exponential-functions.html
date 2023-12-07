@@ -19,22 +19,20 @@
 
 <body>
 <header>
-    <h1>Exponential Functions (WIP)</h1>
+    <h1>Exponential Functions</h1>
 </header>
 
 <main>
 <div class="name print"></div>
 <ol>
     <li>
-        Together as a group 
-        classify each of the following functions as
+        Classify each of the following functions as
         a <em>linear</em> function,
         a <em>quadratic</em> function,
         a <em>power</em> function,
         an <em>exponential</em> function,
         or as “none of these”.
-        Be sure to reach a consensus as a group 
-        on your classification.
+        <div class="skip-third">
         \[
             a(x) = x - 5 + x^2
             \qquad \qquad \qquad
@@ -42,7 +40,8 @@
             \qquad \qquad \qquad
             c(x) = 3.14^x
         \]
-        <br>
+        </div>
+        <div class="skip-third">
         \[
             d(x) = 1.4142x^{2.71}
             \qquad \qquad \qquad
@@ -50,7 +49,8 @@
             \qquad \qquad \qquad
             g(x) = x^2 - 2^x
         \]
-        <br>
+        </div>
+        <div class="skip-third">
         \[
             h(x) = 2^9 + x
             \qquad \qquad \qquad
@@ -58,63 +58,136 @@
             \qquad \qquad \qquad
             k(x) = x^x
         \]
-        <br>
+        </div>
     </li>
-    <li class="skip-half">
-        Let \(z(x) = 2(3.4)^{-x}.\)
+    <li class="skip-third">
+        Let \(p(x) = 3(1.4)^{-2x}.\)
         Calculate the following output values.
         \[
-            z(3)
+            p(3)
             \qquad \qquad \qquad
-            z(-2)
-            \qquad \qquad \qquad
-            z(0)
+            p(-2)
+            \qquad \qquad \qquad 
+            p(0)
+            \qquad \qquad \qquad 
+            p(1/3)
         \]
     </li>
     <li class="skip-page">
-        TK
+        A <em>tribble</em> is an alien creature that,
+        given an adequate food supply,
+        is known to produce a litter of ten offspring every twelve hours.
+        Due to this fact, if you start with 
+        a population of \(N_0\) tribbles,
+        after \(t\) twelve-hour intervals the size of the population 
+        will be modelled by the function \(N(t) = N_0 (11)^t.\)
         <ol>
-            <li>
-                TK
+            <li class="skip-half">
+                In the formula for \(N(t)\)
+                why is the base of the exponential eleven instead of ten?
             </li>
-            <li>
-                TK
+            <li class="skip-half">
+                If you have an initial population of only two tribbles,
+                how many tribbles will there be a day (24 hrs) later?
+                What about a week later?
             </li>
-            <li>
-            TK
+            <!--
+            <li class="hard">
+                The units of \(t\) being “twelve-hour intervals”
+                is a bit cumbersome.
+                How can we edit the formula for \(N(t)\) 
+                such that the units of \(t\) will simply be “days”?
+            </li>
+            -->
+        </ol>
+    </li>
+    <li>
+        The formula for the future value \(A\) 
+        of an initial investment of \(P\) dollars 
+        invested at an annual interest rate of \(r\) percent
+        compounded annually for \(t\) years
+        is given by the formula \[A= P(1+r)^t.\]
+        <ol>
+            <li class="skip-one">
+                If you deposit $420 
+                in a savings account that gets \(3\%\) annual interest
+                what will the account balance be in seven years?
+                (Note that \(3\% = 0.03\,.\))
+                What would the account balance be in 70 years?
+            </li>
+            <li class="skip-one">
+                A more realistic annual interest rate 
+                for a savings account at one of the Big Four US banks,
+                like Chase of Bank of America, is \(0.01\%\).
+                (Note that \(0.01\% = 0.0001\,.\))
+                If you deposit $420 into an account with this interest rate,
+                what will the account balance be in seven years?
+                What will the account balance be in 70 years?
             </li>
         </ol>
     </li>
     <li>
-        "total personal income"
-        \(A(x) = 492.4(1.07)^x\)
-        with \(x\) years after 1960.
-        <ol>
-            <li>
-                complete a table
-            </li>
-            <li>
-                What is the value of \(A(30)?\)
-                What does this value represent 
-                within the context of the model?
-            </li>
-            <li>
-                Plot it
-            </li>
-            <li>
-                What will it be in 2025?
-            </li>
-            <li>
-                Approximate when it'll be … 21.5 trillion?
-            </li>
-        </ol>
+        <p>
+        “Simplify” each of the following expressions.
+        I.e., for each expression re-write it 
+        in a compact, nicer-looking form with fewer characters.
+        Note that whether or not an expression can be “simplified” 
+        is entirely subjective; the purpose of this exercise
+        is just to gain some fluency with the arithmetic of exponents.
+        </p>
+        <p>
+        Next to each expression, in light gray,
+        is <em>a</em> simpler form of the expression.
+        For the sake of practicing effectively, 
+        it may be a good idea 
+        to work on re-writing each expression on separate paper,
+        checking back here only when you’re done 
+        to compare what you’ve written with the form in gray.
+        </p>
+        \[
+            \left(10^0\right)^3 \;{\color{lightgrey} = 1 }
+            \qquad
+            \left(10^3\right)^0 \;{\color{lightgrey} = 1 }
+            \qquad
+            10^{\left(0^3\right)} \;{\color{lightgrey} = 1 }
+            \qquad
+            10^{\left(3^0\right)} \;{\color{lightgrey} = 1 }
+        \]
+        \[
+            \left(10^1\right)^5 \;{\color{lightgrey} = 100000 }
+            \qquad
+            \left(10^5\right)^1 \;{\color{lightgrey} = 100000 }
+            \qquad
+            10^{\left(1^5\right)} \;{\color{lightgrey} = 10 }
+            \qquad
+            10^{\left(5^1\right)} \;{\color{lightgrey} = 100000 }
+        \]
+        \[
+            3^x\left(\frac{1}{2}\right)^x \;{\color{lightgrey} = \left(\frac{3}{2}\right)^x }
+            \qquad
+            \frac{3^x}{\left(\frac{1}{2}\right)^x} \;{\color{lightgrey} = 6^x }
+            \qquad
+            3^{-x}2^{2x} \;{\color{lightgrey} = \left(\frac{4}{3}\right)^x }
+            \qquad
+            \sqrt{3^{6x}} \;{\color{lightgrey} = 27^x }
+        \]
+        \[
+            \frac{\sqrt[3]{27^x}}{3^x} \;{\color{lightgrey} = 1 }
+            \qquad
+            \frac{\sqrt{3x^2}}{x^2} \;{\color{lightgrey} = \frac{\sqrt{3}}{x} }
+            \qquad
+            \sqrt[3]{\frac{x^2}{3x^{-4}}} \;{\color{lightgrey} = \frac{x^2}{\sqrt[3]{3}} }
+            \qquad
+            \left(\frac{2x^{-3}}{x^{11}}\right)^{-2} \;{\color{lightgrey} = \frac{x^{28}}{4} }
+        \]
     </li>
 </ol>
 
+<!--
 <h3>Puzzle</h3>
 <p>
-    <h4 class="screen"><a href="TK">TK</a></h4>
 </p>
+-->
 </main>
 </body>
 

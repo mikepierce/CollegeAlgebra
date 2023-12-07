@@ -19,32 +19,254 @@
 
 <body>
 <header>
-    <h1>Exponential &amp; Logarithmic Models</h1>
+    <h1>Exponential &amp; Log Models</h1>
 </header>
 
 <main>
 <div class="name print"></div>
 <ol>
     <li>
-        No activity for this one
+        <em>Total personal income</em> (TPI),
+        is a measure of the sum-total income 
+        received by individuals from all sources.
+        <a title="bea.gov" href="https://apps.bea.gov/iTable/?reqid=19&step=2&isuri=1&categories=survey#eyJhcHBpZCI6MTksInN0ZXBzIjpbMSwyLDMsM10sImRhdGEiOltbImNhdGVnb3JpZXMiLCJTdXJ2ZXkiXSxbIk5JUEFfVGFibGVfTGlzdCIsIjU4Il0sWyJGaXJzdF9ZZWFyIiwiMTk2MCJdLFsiTGFzdF9ZZWFyIiwiMjAyMyJdLFsiU2NhbGUiLCItOSJdLFsiU2VyaWVzIiwiQSJdXX0=">The BEA reports</a>
+        historical data for total personal income (in trillions of dollars)
+        in the US according to this table:
+        <figure>
+        <table>
+        <tbody>
+            <tr> 
+                <th>Years since 1970</th> 
+                <td>10</td>  
+                <td>15</td>  
+                <td>20</td>  
+                <td>25</td>  
+                <td>30</td>  
+                <td>35</td>  
+                <td>40</td>  
+                <td>45</td> 
+                <td>50</td> 
+            </tr>
+            <tr> 
+                <th>TPI (in trillions)</th> 
+                <td>2.32</td>  
+                <td>3.52</td>  
+                <td>4.91</td> 
+                <td>6.28</td> 
+                <td>8.62</td>  
+                <td>10.55</td>  
+                <td>12.56</td>  
+                <td>15.47</td>  
+                <td>19.63</td>  
+            </tr>
+        </tbody>
+        </table>
+        </figure>
+        This TPI data can be modelled  
+        by the exponential function \(P(t) = 1.76(1 + 0.05)^t,\)
+        where \(t\) is the number of years since 1970.
         <ol>
-            <li>
-                TK
+            <li class="skip-one-half">
+                What is the value of \(P(45)?\)
+                What does this value represent 
+                within the context of the model?
+                By what percent does this value differ
+                from the figure reported by the BEA?
+            </li>
+            <li class="skip-two">
+                Within the context of the model,
+                what do the numbers \(1.76\) and \(0.05\) represent?
+            </li>
+            <li class="skip-page">
+                What does the model predict 
+                total personal income in the US to be 
+                next year?
             </li>
             <li>
-                TK
+                <div class="print">
+                The data is printed here again for convenience,
+                and the equation for the model is \(P(t) = 1.76(1 + 0.05)^t.\)
+                <figure>
+                <table>
+                <tbody>
+                    <tr> 
+                        <th>Years since 1980</th> <td>10</td>  <td>15</td>  <td>20</td>  <td>25</td>  <td>30</td>  <td>35</td>  <td>40</td>  <td>45</td> <td>50</td> 
+                    </tr>
+                    <tr> 
+                        <th>TPI (in trillions)</th> <td>2.32</td>  <td>3.52</td>  <td>4.91</td> <td>6.28</td> <td>8.62</td>  <td>10.55</td>  <td>12.56</td>  <td>15.47</td>  <td>19.63</td>  
+                    </tr>
+                </tbody>
+                </table>
+                </figure>
+                </div>
+                Carefully sketch a scatter-plot of the data
+                along with the graph \(y = P(t)\)
+                on these axes to visually verify
+                that \(P\) is a reasonable model for the data.
+                <figure> <img width="864" src="img/axes-firstquad/out.png"> </figure>
+            </li>
+            <li class="skip-one-half">
+                By testing various inputs, 
+                can you find which year model predicts
+                the US will have a total personal income
+                of $25 trillion? 
+                What about $100 trillion?
+                What about $1 quadrillion?
+            </li>
+            <li class="skip-page">
+                <p>
+                Just based on the shape of the data in the scatter plot,
+                it could also be a reasonable choice
+                to use a power function to model this data.
+                However, financial figures are often modelled 
+                exponentially due to the notion that 
+                <em>financial growth is proportional to current wealth</em>
+                (a more balanced take on the saying “the rich get richer”),
+                and this is a defining feature of exponential functions.
+                </p>
+                <p>
+                Comparing power functions with exponential functions,
+                as their input increases, gets bigger and bigger,
+                which function “grows faster”?
+                </p>
+            </li>
+        </ol>
+    </li>
+    <li>
+        The table below gives the projected life expectancy (life span)
+        of a person born in the United States for select birth years
+        from 1920 and through 2018 
+        <a href="https://www.cdc.gov/nchs/data-visualization/mortality-trends/">according to the CDC</a>.
+        <figure>
+        <table>
+        <tbody>
+            <tr> 
+                <th>Years since 1900</th> 
+                <td>20</td>  
+                <td>30</td>  
+                <td>40</td>  
+                <td>50</td>  
+                <td>60</td>  
+                <td>70</td>  
+                <td>80</td>  
+                <td>90</td>  
+                <td>100</td>  
+                <td>104</td>  
+                <td>110</td>  
+                <td>115</td>  
+                <td>118</td>  
+            </tr>
+            <tr> 
+                <th>Life Span</th> 
+                <td>54.1</td>  
+                <td>59.7</td>  
+                <td>62.9</td>  
+                <td>68.2</td>  
+                <td>69.7</td>  
+                <td>70.8</td>  
+                <td>73.7</td>  
+                <td>75.4</td>  
+                <td>76.8</td>  
+                <td>77.5</td>  
+                <td>78.7</td>  
+                <td>78.7</td>  
+                <td>78.8</td>  
+            </tr>
+        </tbody>
+        </table>
+        </figure>
+        <ol>
+            <li class="skip-half">
+                Using technology, perform regression to
+                find a logarithmic function \(f(t) = a + b\ln(t)\)
+                that models the data,
+                with \(t\) being the number of years since 1900.
+            </li>
+            <li class="skip-half">
+                Using technology, perform regression to
+                find a power model \(g(t) = a\cdot t^b\)
+                that models the data,
+                with \(t\) being the number of years since 1900.
             </li>
             <li>
-            TK
+                Using technology,
+                plot the graphs of each of these functions
+                along with the data on the same set of axis
+                and decide which model fits the data best.
+                On your plot make sure the domain of \(t\)
+                matches up with the years 1920–2030.
+            </li>
+            <li class="skip-half">
+                Between these two models, 
+                which one predicts life expectancy 
+                will increase <em>more</em> in the future?
+                I.e.~which of these models is more optimistic?
+            </li>
+            <li class="skip-one">
+                What does the model that you decided
+                fits the data best predict your own life expectancy to be?
+            </li>
+            <li class="skip-page">
+                What does the model that you decided
+                fits the data best predict
+                the life expectancy of a baby born today to be?
+            </li>
+            <li class="skip-two">
+                What year does the logarithmic model
+                predict life expectancy to be 80 years old?
+            </li>
+            <li class="skip-half">
+                <p>
+                    In the years since 2018,
+                    life expectancy in the US has started to decline.
+                    This is suspected to be due to the COVID-19 pandemic.
+                    <a href="https://www.npr.org/sections/health-shots/2022/08/31/1120192583/">
+                        Someone born in the US in 2019, 2020, and 2021
+                        has a life expectancy of 79 years, 77 years, and 76.1 years respectively
+                    </a>.
+                    Add this new data to the data set.
+                </p>
+                <p>
+                    Both logarithmic and power functions are increasing functions.
+                    Since life expectancy is decreasing in recent years though,
+                    these functions may no longer provide the most accurate models.
+                    What’s a type of function that more accurately models
+                    data that initially increases, but then begins to decrease?
+                    Using technology, perform regression to
+                    find such function \(h(t)\)
+                    that models the data,
+                    again with \(t\) equal to \(0\) in 1900.
+                </p>
+            </li>
+            <li class="skip-one">
+                What does this new model predict
+                the life expectancy of a baby born today to be?
+                How does this compare to the figure predicted
+                by either your logarithmic or power model?
+            </li>
+            <li class="skip-one">
+                What sort of function do you think should be used
+                to model this data with the aim 
+                of accurately predicting future life expectancy?
+                Another option you may want to consider is a 
+                <em>logistic</em> (different than <em>logarithmic</em>) model;
+                look up a picture of the graph of a logistic function.
+            </li>
+            <li>
+                <h4>Research</h4>
+                Can you find <em>reliable</em> life expectancy data 
+                for the year 2022?
             </li>
         </ol>
     </li>
 </ol>
 
+<!--
 <h3>Puzzle</h3>
 <p>
     <h4 class="screen"><a href="TK">TK</a></h4>
 </p>
+-->
 </main>
 </body>
 

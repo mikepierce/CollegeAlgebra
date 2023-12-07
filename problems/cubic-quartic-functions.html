@@ -26,24 +26,121 @@
 <div class="name print"></div>
 <ol>
     <li>
-        no activity for this one
+        Here’s data from the 
+        <a href="https://www.eia.gov/energyexplained/us-energy-facts/">US Energy Information Administration (EIA)</a>
+        on the total US energy supply coming from crude oil products, 
+        in quadrillion BTUs (British thermal units).
+        <figure>
+        <table>
+        <tbody>
+            <tr> 
+                <th>Year</th> 
+                <td>1955</td> 
+                <td>1960</td> 
+                <td>1965</td> 
+                <td>1970</td> 
+                <td>1975</td> 
+                <td>1985</td> 
+                <td>1990</td> 
+                <td>1995</td> 
+                <td>2000</td> 
+                <td>2010</td> 
+                <td>2015</td> 
+                <td>2020</td> 
+            </tr>
+            <tr> 
+                <th>Quadrillion BTUs</th> 
+                <td>14.4</td> 
+                <td>14.9</td> 
+                <td>16.5</td> 
+                <td>20.4</td> 
+                <td>17.7</td> 
+                <td>19.0</td> 
+                <td>15.6</td> 
+                <td>13.9</td> 
+                <td>12.4</td> 
+                <td>11.6</td> 
+                <td>19.7</td> 
+                <td>23.5</td> 
+            </tr>
+        </tbody>
+        </table>
+        </figure>
         <ol>
-            <li>
-                TK
+            <li class="skip-two">
+                Letting your independent variable \(t\)
+                be the number of years since 1950,
+                use technology (preferably Desmos or Excel)
+                to find the cubic polynomial function
+                and the quartic polynomial function
+                that best fit this data.
+                Write down the formulas for these functions below,
+                and plot the data along with 
+                the graphs of these two functions on these axes below
+                on the domain \(0 \leq t \leq 80.\)
+                (Protip: you don’t have to start the labels
+                for the tics on your \(y\)-axis at zero;)
+                decide what the minimum and maximum values 
+                of \(y\) you need to consider to get a good looking plot first, 
+                then label the \(y\)-axis.)
+                <figure> <img width="864" src="img/axes-firstquad/out.png"> </figure>
             </li>
-            <li>
-                TK
+            <li class="skip-one-half">
+                Between the cubic and the quartic model,
+                which appears to fit the data best?
+                Do either of these functions appear to be viable models
+                to predict future crude oil use in the US in the long term?
             </li>
-            <li>
-            TK
+            <li class="skip-two">
+                The cubic model achieves 
+                a local minimum value and a local maximum value 
+                on the domain \(0 \leq t \leq 80.\)
+                Using technology, find the exact coordinates
+                of the points corresponding to this min and max,
+                and interpret the coordinates of those points
+                in the context of the situation we’re modelling.
+            </li>
+            <li class="hard">
+                (Optional)
+                Using Desmos or Excel,
+                fit a polynomial function of degree higher than four
+                to the data.
+                Can you find a high-degree polynomial
+                that appears to fit the data substantially better
+                than the cubic or quartic model?
             </li>
         </ol>
+    </li>
+    <li class="skip-one">
+        What is the maximum number of times 
+        that the graph of a cubic polynomial
+        and the graph of a quartic polynomial
+        can possibly intersect each other?
     </li>
 </ol>
 
 <h3>Puzzle</h3>
 <p>
-    <h4 class="screen"><a href="TK">TK</a></h4>
+    Draw a circle, and draw \(2\) points on the circle.
+    If you connect those two points with a line, 
+    it’ll divide the circle’s interior into two regions. 
+</p>
+<p>
+    If instead you draw \(3\) points on the circle,
+    and you draw a line connecting 
+    each of those points to the other two,
+    it’ll divide the circle’s interior into four regions. 
+</p>
+<p>
+    Now draw \(4\) points on the circle,
+    and draw a line connecting each of those points to the others
+    (there should be six lines total).
+    Into how many regions does this divide the circle’s interior?
+    What if you do this starting with \(5\) points on the circle?
+    Do you suspect a pattern?
+    If you do this starting with \(6\) points on the circle,
+    does it adhere to the pattern you suspected?
+    What’s going on here?
 </p>
 </main>
 </body>

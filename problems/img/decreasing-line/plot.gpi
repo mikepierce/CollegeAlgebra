@@ -1,0 +1,38 @@
+reset
+set autoscale
+set samples 2048
+set xtics axis scale 1,0.33 offset 0,0.33 1
+set mxtics 1
+set ytics axis scale 1,0.33 1
+set mytics 2
+set xrange [-1.5:4.5]
+set yrange [-1.5:2.5]
+set zeroaxis linewidth 1 linecolor "#a0a0a0" linetype 1
+set grid noxtics noytics front ### to get xtics/ytics labels in front
+
+# X and Y axis labels
+set label front "\\(x\\)" at graph 1, first 0 offset char 2, char 0 right font 'Courier Bold,12' 
+set label front "\\(y\\)" at first 0, graph 1 offset char 0, char 1 center font 'Courier Bold,12' 
+set rmargin 3
+set tmargin 2
+set lmargin 4
+
+set key at 10,105 ### position of the key
+set border 0
+set style fill transparent solid 0.5
+
+### 4:3 Aspect Ratio to PDF
+#set terminal epslatex size 6.5in,4.875in standalone header "\\usepackage{fourier}" 
+#set output "main.tex"
+
+### 2:1 Aspect Ratio to PDF
+set terminal epslatex size 6.5in,3.25in standalone header "\\usepackage{fourier}" 
+set output "main.tex"
+
+### 5:2 Aspect Ratio to PDF
+#set terminal epslatex size 6.5in,2.6in standalone header "\\usepackage{fourier}" 
+#set output "main.tex"
+
+f(x) = -1.333*x+2
+plot f(x) title "\\(y = f(x)\\)"
+

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Math113 Annuities | Mike Pierce</title>
+    <title>Math113 Annuities and Loans | Mike Pierce</title>
     <meta name="author" content="Mike Pierce">
 
     <link rel="shortcut icon" type="image/png" href="../../assets/favicon.png">
@@ -19,32 +19,257 @@
 
 <body>
 <header>
-    <h1>Annuities</h1>
+    <h1>Annuities &amp; Loans</h1>
 </header>
 
 <main>
 <div class="name print"></div>
+<!--
+<blockquote>
+    Recall the formulas for annuities,
+    \[
+    S = P\left(\frac{\left(1+\frac{r}{12}\right)^{12t}-1}{\frac{r}{12}}\right)
+    \qquad\text{and}\qquad
+    S = P\left(\frac{1-\left(1+\frac{r}{12}\right)^{-12t}}{\frac{r}{12}}\right)\,,
+    \]
+    where \(P\) is the payment/withdrawal amount per month,
+    \(r\) is the annual interest rate,
+    and \(S\) is the annuity account’s balance after \(t\) years.
+    The left formula is for when the balance is headed away from zero
+    (the payments and interest push the balance in the same direction),
+    and the right formula is for when the balance is headed towards zero
+    (the payments and interest push the balance in opposite directions).
+    The formulas assume interest is calculated and added monthly.
+</blockquote>
+-->
 <ol>
-    <li>
-        TK
+    <li class="skip-page">
+        Suppose Anita wants to save up for 
+        a down payment on a home.
+        She opens an annuity account with her bank
+        that offers 3% annual interest compounded monthly,
+        and she plans to deposit $800 per month.
         <ol>
             <li>
-                TK
+                How much will she have saved 
+                for a down payment after five years?
             </li>
             <li>
-                TK
+                How much would she had saved 
+                if she instead stashed $800 into a coffee can 
+                burried in her backyard each month?
+            </li>
+        </ol>
+    </li>
+    <li class="skip-page">
+        Over the course of his life, 
+        Billiam has saved up $1.2 million 
+        in a retirement account that yields 2.5% annual interest.
+        He’s 67 now, and ready to retire.
+        <ol>
+            <li>
+                If Billiam anticipates living to be 100-years-old
+                and wants his saving to last that long,
+                how much can he afford to withdraw each month?
             </li>
             <li>
-            TK
+                Billiam decides that’s not enough money per month
+                to support his extravagant lifestyle,
+                so he withdraws $7000 per month in his retirement instead.
+                How old will Billiam be when he runs out of money?
+                <!-- 17.7 years later -->
+            </li>
+            <li class="hard">
+                Billiam finds this unacceptable! 
+                He is convinced he’ll live to be 100-years-old,
+                and he will settle for no less than $7000 per month in his retirement.
+                The only option then is to defer his retirement and keep working.
+                If Billiam can contribute $2,200 per month 
+                into his retirement account while he’s working,
+                when can he finally retire?
+            </li>
+        </ol>
+    </li>
+    <li>
+        Suppose you are contributing $600 a month 
+        into a savings annuity account, intended to be your retirement account,
+        that pays an annual interest rate of 3.7% compounded monthly. 
+        <ol>
+            <li class="skip-four">
+                Using just a desk calculator (TI or phone), 
+                manually calculate the balance of your annuity account 
+                40 years in the future.
+            </li>
+            <li>
+                Now using the <code>Excel</code> spreadsheet 
+                that has been pre-programmed with the annuity formulas
+                and the amortization schedule,
+                enter the values of $600 for \(P\) and 3.7% for \(r\)
+                to verify your answer to the last question,
+                and then answer the following questions:
+                <ol>
+                    <li class="skip-half">
+                        What will the balance of the retirement annuity be
+                        after fifty years?
+                    </li>
+                    <li class="skip-page">
+                        One of the things the chart illustrates
+                        is the total amount of money you’ve invested after so many years.
+                        What kind of function (model) describes this amount over time?
+                    </li>
+                    <li class="skip-one">
+                        The other thing the chart illustrates
+                        is the total balance of the retirement annuity.
+                        What kind of function (model) describes this amount over time?
+                    </li>
+                    <li class="skip-one">
+                        Play around in the spreadsheet 
+                        with different initial values of \(P\)
+                        to figure out how much you would need to deposit each month
+                        so that the balance of the account would be 
+                        $2 million in forty years.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+    <li>
+        Suppose you bought a house.
+        After making a down-payment,
+        you apply for a mortgage with an annual 5.99% interest rate
+        on the remaining balance of $251,200.
+        Recall that the formula relating these values 
+        to your monthly mortgage payments \(P\) is
+        \[S = P\left(\frac{1-\left(1+\frac{r}{12}\right)^{-12t}}{\frac{r}{12}}\right)\,.\]
+        <ol>
+            <li class="skip-one-half">
+                <em>Before plugging in numbers</em>,
+                solve this equation for \(P\) 
+                so you have a formula for your monthly mortgage payments.
+                (Think before you start—this can be done in one step.)
+            </li>
+            <li class="skip-page">
+                Using this formula, 
+                calculate what your monthly payments would be
+                if you got a 15-year mortgage versus a 30-year mortgage.
+            </li>
+            <li class="skip-two">
+                Because the balance of the mortgage 
+                accrues interest while you are paying it off,
+                the total amount you pay will be more 
+                than the initial mortgage amount;
+                you are paying for the interest too.
+                Using your answers to the previous question,
+                calculate how much money you’d be paying <em>total</em>
+                in the case of a 15-year mortgage and the case of a 30-year mortgage.
+                (Hint: don’t overthink these calculations.)
+            </li>
+            <li>
+                Now using the <strong>Mortgage</strong> worksheet
+                of the <code>Excel</code> spreadsheet,
+                check your calculations from the previous questions.
+            </li>
+        </ol>
+    </li>
+    <li>
+        Using the <strong>Mortgage</strong> worksheet
+        to perform the calculations you need to answer these questions
+        about a 30-year mortgage on a $360,000 home
+        at a 5.5% annual interest rate,
+        <ol>
+            <li class="skip-one">
+                What will the monthly mortgage payments be?
+            </li>
+            <li class="skip-page">
+                Multiply the monthly mortgage payment by \(12\)
+                to figure out the annual housing cost. 
+                Now, the classical advice is that 
+                ”no more than 28% of a person’s income
+                should go towards housing.”
+                Adhering to this rule, 
+                what would a person’s annual income (after taxes)
+                need to be to afford this mortgage?
             </li>
         </ol>
     </li>
 </ol>
 
-<h3>Puzzle</h3>
-<p>
-    <h4 class="screen"><a href="TK">TK</a></h4>
-</p>
+<h3>Your Own Financials</h3>
+<ol>
+    <li>
+    <p>
+        While you’ve got the <strong>Mortgage</strong> worksheet open,
+        you might as well play with numbers to get a sense
+        of what your personal situation will be 
+        when/if you decide to buy a home.
+        There’s two critical questions to answer:
+    </p>
+    <ul>
+        <li> Where do you plan on buying a home (living)?  </li>
+        <li> What sort of income do you anticipate having?  </li>
+    </ul>
+    <p>
+        Look up average home prices in the area you’re planning on living,
+        but also look up lower-end home prices 
+        (if there are enough luxury homes in the area, 
+        they’ll skew the average, making it misleading).
+        Then try to estimate your future annual income:
+        if you have a career/title in mind, 
+        look up <em>starting salaries/earnings</em> for that career.
+    </p>
+    <p>
+        Some quick facts:
+        First, the vast majority of mortgages have a 30-year term,
+        so use \(N=30\) unless you have a good reason otherwise.
+        Next, the typical interest rate of a mortgage is set by the 
+        <a href="https://www.forbes.com/advisor/investing/federal-funds-rate/">Federal Funds Rate</a>.
+        Look up what this currently is for your mortgage rate \(r\), 
+        and look up any news on speculation 
+        for how it will change in the future.
+        Last, the classic advice is that 
+        “28% of your gross income should go towards housing.”
+        This advice is suspect given recent trends
+        in the housing market and labor market,
+        but should still be considered when deciding 
+        what monthly mortgage payment \(P\) you can afford
+        given your projected income.
+    </p>
+    </li>
+    <li>
+    <p>
+        Notice that there’s <strong>Student Loans</strong> worksheet 
+        in this Excel file too.
+        If you have them, you could take this time 
+        to work out the details of your own student loans
+        <span class="print">(You don’t have to write anything on this page!)</span>
+        What is the interest rate on your loans?
+        How much are you taking out in loans each year/semester?
+        There’s one initial important thing to know:
+        are your loans subsidized or unsubsidized?
+        <ul>
+            <li>
+                Subsidized students loans don’t accrue interest
+                while you are still attending school 
+                and during some “grace period” after graduation
+                until (ideally) you find employment,
+                because the government is paying the interest.
+            </li>
+            <li>
+                Unsubsidized loans simply accrue interest.
+            </li>
+        </ul>
+        While you are not making payments, 
+        if your loans are accruing interest
+        the balance of your student debt
+        can be calculated using the formula for compound interest.
+        As soon as you begin making payments,
+        interest is still accruing,
+        so the balance will be described the annuity formula
+        we’ve been discussing.
+    </p>
+    </li>
+</ol>
+
 </main>
 </body>
 
