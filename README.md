@@ -1,4 +1,4 @@
-[![Screenshot of my instance of the outline](https://org.coloradomesa.edu/~mapierce2/113/screenshot.webp)](https://org.coloradomesa.edu/~mapierce2/113/)
+[![Screenshot of my instance of this outline](https://org.coloradomesa.edu/~mapierce2/113/screenshot.webp)](https://org.coloradomesa.edu/~mapierce2/113/)
 
 # [College Algebra](https://org.coloradomesa.edu/~mapierce2/113/)
 
