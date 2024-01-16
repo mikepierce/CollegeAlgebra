@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Math113 Quadratic and Power Modelling | Mike Pierce</title>
+    <meta name="author" content="Mike Pierce">
+
+    <link rel="shortcut icon" type="image/png" href="../../assets/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="all" href="../../assets/main.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <style> @media only print { body {margin:0.33in 0.67in 0.33in 0.67in; width:auto; font-size:12pt;} main {column-count:1;} h1 {font-size:2em;} } </style>
+    <style>body{background-image:linear-gradient(transparent, var(--background)), url("../banner.webp");}</style>
+</head>
+
+<body>
+<header>
+    <h1>Quadratic &amp; Power Modelling</h1>
+</header>
+
+<main>
+<div class="name print"></div>
+<ol>
+    <li class="screen">
+        <p>
+            The frequency at which Hollywood is producing Batman movies 
+            is increasing dramatically. Here is 
+            <a href="en.wikipedia.org/wiki/Batman_in_film\#List_of_films">data</a>
+            correlating the rank of each Batman movie
+            (the 1st movie, 2nd movie, 3rd movie, etc)
+            since the original 1943 film <em>Batman</em> starring Lewis Wilson,
+            with the year it was released since 1900.
+            (Excluding DC universe films that feature Batman 
+            not that aren’t <em>about</em> Batman.)
+        </p>
+        <figure>
+        <table>
+        <tbody>
+            <tr> 
+                <th>Movie Number</th> 
+                <td>1</td>  
+                <td>2</td>  
+                <td>3</td>  
+                <td>4</td>  
+                <td>5</td>  
+                <td>6</td>  
+                <td>7</td>  
+                <td>8</td>  
+                <td>9</td>  
+                <td>10</td>  
+                <td>11</td>  
+                <td>12</td>  
+                <td>13</td>  
+            </tr>
+            <tr> 
+                <th>Year Since 1900</th> 
+                <td>43</td>  
+                <td>49</td>  
+                <td>66</td>  
+                <td>82</td>  
+                <td>92</td>  
+                <td>95</td>  
+                <td>97</td>  
+                <td>105</td>  
+                <td>108</td>  
+                <td>112</td>  
+                <td>116</td>  
+                <td>117</td>  
+                <td>122</td>  
+            </tr>
+        </tbody>
+        </table>
+        </figure>
+        <!--
+        The function \(B(x) = 44x^{\frac 2 5}\) provides a fairly good model for this data.
+        % https://www.desmos.com/calculator/nzvpsb5sbk
+        -->
+        <ol>
+            <li class="skip-one">
+                Use technology find a function of the form \(f(x) = ax^b\)
+                that models the release date of a Batman movie
+                given its rank.
+            </li>
+            <li class="skip-one">
+                According to your model, 
+                what year should we expect 
+                the 30th Batman movie?
+            </li>
+            <!--
+            <li class="skip-one">
+                The function \(B\) is invertible. 
+                Write down a formula for its inverse \(\inv{B},\)
+                and describe what the inputs and outputs of this inverse are
+                in the context of the model.
+            </li>
+            -->
+            <li class="skip-two">
+                According to this model, how many Batman movies 
+                should we expect to exist by 2080?
+            </li>
+            <li class="skip-page">
+                According to this model, by what year 
+                should we start to expect that 
+                multiple Batman movies will be released 
+                <em>per year</em>, each and every year into the future?
+            </li>
+        </ol>
+    </li>
+    <!--
+    <li>
+        There is a unique parabola that passes through the points 
+        \((0,5),\) \((4,13),\) and \((—2,25)\)
+        in 2-dimensional space. 
+        Write the formula for the quadratic function 
+        whose graph is this parabola.
+    </li>
+    -->
+    <li>
+        <p>
+            Here is select
+            <a href="https://population.un.org/dataportal/data/indicators/49/locations/900/start/1990/end/2040/table/pivotbylocation?df=3bd851b0-a890-4d12-ace7-ac17cef35032">historical data from the UN</a>
+            estimating the population of the earth in billions.
+        </p>
+        <figure>
+        <table>
+        <tbody>
+            <tr> 
+                <th>Year</th> 
+                <td>1985</td>  
+                <td>1990</td>  
+                <td>1995</td>  
+                <td>2000</td>  
+                <td>2005</td>  
+                <td>2010</td>  
+                <td>2015</td>  
+                <td>2020</td>  
+            </tr>
+            <tr> 
+                <th>Population</th> 
+                <td>4.86</td>  
+                <td>5.32</td>  
+                <td>5.74</td>  
+                <td>6.15</td>  
+                <td>6.56</td>  
+                <td>6.99</td>  
+                <td>7.43</td>  
+                <td>7.84</td>  
+            </tr>
+        </tbody>
+        </table>
+        </figure>
+        <ol>
+            <li class="skip-one">
+                <p>
+                Use technology to perform regression 
+                to find a quadratic function 
+                that models the earth’s population (in billions)
+                as a function of \(t\) years since 1980.
+                </p>
+                <aside>
+                    Recall that the capital “E” notation 
+                    is scientific notation. 
+                    E.g.  the \(3.7\)E−2 
+                    means \(3.7 \times 10^{−2}.\)
+                </aside>
+            </li>
+            <li class="skip-one">
+                According to your model, 
+                what is the current population of the earth?
+            </li>
+            <li class="skip-one">
+                According to your model, 
+                what was the population of the earth in 1980?
+            </li>
+            <li class="skip-page">
+                What are the \(x\)- and \(y\)-coordinates
+                of the vertex of the graph of your function?
+                What do these coordinates mean 
+                within the context of the model?
+            </li>
+            <li class="skip-three-half">
+                According to this model, 
+                the population of the earth will hit a maximum
+                and then begin to decline.
+                What is the range of years 
+                during which the population will be declining?
+            </li>
+            <li class="skip-page">
+                At some time since 1980 the earth’s population 
+                was <em>exactly</em> 5 billion people.
+                Find the year during which
+                the model indicates this happened.
+                Then since the model indicates 
+                the earth’s population 
+                will eventually decline to zero,
+                it must become <em>exactly</em> 5 billion 
+                again in the future;
+                calculate the year this happens too.
+            </li>
+        </ol>
+    </li>
+</ol>
+</main>
+</body>
+
+</html>
+
