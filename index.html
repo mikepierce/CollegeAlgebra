@@ -10,9 +10,20 @@
     <meta name="description" content="Course outline/schedule and resources for Mike's College Algebra (with Applications) at CMU">
 
     <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <link rel="stylesheet" type="text/css" media="all" href="brief.css">
     <link rel="stylesheet" type="text/css" media="all" href="../assets/main.css">
     <link rel= "alternate" href="../feed.xml" type="application/atom+xml" title="Mike Pierce's Feed">
-    <style>@media only print {ul, details {margin:0.33em;} h2,h3 {margin:1.33em 0 0.17em;} h3:first-child{margin-top:0em;}}</style>
+    <style media="print">
+        @page {size:letter; margin:0.75in 0.4in 0.75in 0.4in;}
+        body {font-size:12pt; line-height:12pt;} 
+        h1 {font-size:30pt;} 
+        h2 {font-size:18pt;} 
+        h3 {font-size:16pt;} 
+        h2, h3 {margin:12pt 0 4pt; 0} 
+        h3:first-child{margin-top:0;}
+        ul, details {margin:4pt;} 
+        main {column-count:2; column-gap:0.2in; column-fill:auto;}
+    </style>
     <style>body{background-image:linear-gradient(transparent, var(--background)), url("banner.webp");}</style>
 </head>
 
@@ -23,7 +34,6 @@
     <li> <a href="..">Mike Pierce</a> </li>
     <li> Math113 </li>
     <li> Spring2024 </li>
-    <li class="screen"> <a href="https://d2l.coloradomesa.edu/d2l/home/238363">D2L</a> </li>
     <li class="screen"> <a href="https://github.com/mikepierce/Outline-CollegeAlgebra">Fork on GitHub</a> </li>
     <li class="print"> Hosted at <a class="url" href="https://org.coloradomesa.edu/~mapierce2/113/">coloradomesa.edu/~mapierce2/113</a> </li>
 </ul>
@@ -33,33 +43,44 @@
 <p class="screen">
     Within each section are links to notes, video lectures, 
     technology guides, demonstrations in Desmos,
-    practice exercises, problems, and past exams.
+    problem sheets, assignments, and past midterm exams.
     Chapters enumerated with § refer to
     <a href="https://www.pearson.com/en-us/subject-catalog/p/college-algebra-in-context-with-applications-for-the-managerial-life-and-social-sciences/P200000006206/9780136880899"><cite>College Algebra 6ed</cite>, Harshbarger &amp; Yocco</a>.
 </p>
+<nav class="screen">
+<ul class="inline">
+    <!-- <li><a href="summary">Narrative Course Summary</a></li> -->
+    <li><a href="workflow">Suggested Course Workflow</a></li>
+    <!-- <li><a href="TK">TK</a></li> -->
+<ul>
+</nav>
 
 <nav>
 <h3 id="one">Week One · January 22</h3>
 <details>
     <summary>Mon/Tuesday – §1.1 Functions and Models </summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/FunctionDefn.aspx">The Definition of a Function, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/FkUEsP9efFg">Introduction to Functions, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/p1sGAHulT8w">How to Evaluate Functions, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/LvUCDcp6Z3k">Finding the Domain of Functions, Professor Leonard</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/FunctionDefn.aspx"><cite>The Definition of a Function</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/FkUEsP9efFg"><cite>Introduction to Functions</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/p1sGAHulT8w"><cite>How to Evaluate Functions</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/LvUCDcp6Z3k"><cite>Finding the Domain of Functions</cite>, Professor Leonard</a></li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/functions-models.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
 <details>
     <summary>Wednes/Thursday – §1.2 Graphs of Functions</summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Graphing.aspx">Graphing, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/7N_-G4usp6Q">Features of Graphs, Domain, Range, Professor Leonard</a></li>
-        <li> Desmos: <a href="https://www.desmos.com/calculator/xbpsh2txwf">Data Regression</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Graphing.aspx"><cite>Graphing</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/7N_-G4usp6Q"><cite>Features of Graphs, Domain, Range</cite>, Professor Leonard</a></li>
+        <li> Desmos: <a href="https://www.desmos.com/calculator/7mzhrztiut">$TWTR Regression Example</a> </li>
         <li> Desmos: <a href="https://www.desmos.com/calculator/hkomllikkb">Graphing Fahrenheit/Celsius </a></li>
         <li> Desmos Guide: <a href="https://help.desmos.com/hc/en-us/articles/4405489674381-Tables">Tables and Scatter-plots</a></li>
-        <li> TI-Calc Guide: <a href="https://www.dummies.com/article/technology/electronics/graphing-calculators/how-to-graph-functions-on-the-ti-84-plus-160993/">How to Graph Functions</a></li>
-        <li> TI-Calc Guide: <a href="https://www.dummies.com/article/technology/electronics/graphing-calculators/how-to-plot-two-variable-data-on-the-ti-84-plus-160917/">How to Plot Two-Variable Data</a></li>
+        <li> TI-Calc Guide: <a href="https://www.dummies.com/article/technology/electronics/graphing-calculators/how-to-graph-functions-on-the-ti-84-plus-160993/"><cite>How to Graph Functions</cite></a></li>
+        <li> TI-Calc Guide: <a href="https://www.dummies.com/article/technology/electronics/graphing-calculators/how-to-plot-two-variable-data-on-the-ti-84-plus-160917/"><cite>How to Plot Two-Variable Data</cite></a></li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/graphs-functions.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
@@ -68,16 +89,20 @@
 <details>
     <summary>Mon/Tuesday – Syllabus, and §1.3 Linear Functions </summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Lines.aspx">Lines, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Lines.aspx"><cite>Lines</cite>, Paul Dawkins</a></li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/linear-functions.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
 <details>
     <summary>Wednes/Thursday – §1.4 Equations of Lines</summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveLinearEqns.aspx">Linear Equations, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/LinearApps.aspx">Applications of Linear Equations, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveLinearEqns.aspx"><cite>Linear Equations</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/LinearApps.aspx"><cite>Applications of Linear Equations</cite>, Paul Dawkins</a></li>
         <li> Desmos: <a href="https://www.desmos.com/calculator/iyiohmzd9e">Scatterplot Example</a></li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/equations-lines.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
@@ -86,22 +111,27 @@
 <details>
     <summary>Mon/Tuesday – §2.1 Solutions of Linear Equations </summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolutionSets.aspx">Solutions and Solution Sets, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolutionSets.aspx"><cite>Solutions and Solution Sets</cite>, Paul Dawkins</a></li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/solutions-linear-equations.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
 <details>
     <summary>Wednes/Thursday – §2.2 Fitting Lines to Data Points </summary>
     <ul>
-        <li> TI-Calc Guide: <a href="https://education.ti.com/en/customer-support/knowledge-base/ti-83-84-plus-family/product-usage/34506">Linear Regression</a> </li>
-        <li> TI-Calc Guide: <a href="https://www.dummies.com/article/technology/electronics/graphing-calculators/regression-modeling-on-the-ti-84-plus-160903/">Regression Modeling</a> </li>
-        <li> Excel Guide: <a href="https://support.microsoft.com/en-us/office/add-a-trend-or-moving-average-line-to-a-chart-fa59f86c-5852-4b68-a6d4-901a745842ad">Add a trend or moving average line to a chart</a> </li>
-        <li> Excel Guide: <a href="https://www.investopedia.com/ask/answers/062215/how-can-i-run-linear-and-multiple-regressions-excel.asp">Creating a Linear Regression Model</a> </li>
-        <!-- <li> Desmos: <a href="https://www.desmos.com/calculator/j30sf6cqda">First Linear Regression Activity</a></li> -->
+        <li> TI-Calc Guide: <a href="https://education.ti.com/en/customer-support/knowledge-base/ti-83-84-plus-family/product-usage/34506"><cite>Linear Regression</cite></a> </li>
+        <li> TI-Calc Guide: <a href="https://www.dummies.com/article/technology/electronics/graphing-calculators/regression-modeling-on-the-ti-84-plus-160903/"><cite>Regression Modeling</cite></a> </li>
+        <li> Excel Guide: <a href="https://support.microsoft.com/en-us/office/add-a-trend-or-moving-average-line-to-a-chart-fa59f86c-5852-4b68-a6d4-901a745842ad"><cite>Add a trend or moving average line to a chart</cite></a> </li>
+        <li> Excel Guide: <a href="https://www.investopedia.com/ask/answers/062215/how-can-i-run-linear-and-multiple-regressions-excel.asp"><cite>Creating a Linear Regression Model</cite></a> </li>
         <li> Desmos Guide: <a href="https://help.desmos.com/hc/en-us/articles/4406972958733-Regressions">Regressions</a></li>
+        <li> Desmos: <a href="https://www.desmos.com/calculator/k5blx2abxh">US Life Expectancy (Simple Sample)</a> </li>
         <li> Desmos: <a href="https://www.desmos.com/calculator/uks3ny4cll">US Life Expectancy</a> </li>
+        <li> Excel: <a class="url" href="docs/US-Life-Expectancy-Simple-Sample.xlsx" download>US-Life-Expectancy-Simple-Sample.xlsx</a> </li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/fitting-lines-data.html">Class Problem Sheet</a></li>
-        <li> <a href="docs/regression">Regression Project</a> </li>
+        <li> <a href="assignments/regression">Regression Project</a> </li>
     </ul>
 </details> 
 
@@ -109,9 +139,11 @@
 <details>
     <summary>Mon/Tuesday – §2.3 Systems of Linear Equations and §2.4 Inequalities </summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SystemsTwoVrble.aspx/">Linear Systems with Two Variables, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SystemsThreeVrble.aspx">Linear Systems with Three Variables, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveLinearInequalities.aspx">Linear Inequalities, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SystemsTwoVrble.aspx/"><cite>Linear Systems with Two Variables</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SystemsThreeVrble.aspx"><cite>Linear Systems with Three Variables</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveLinearInequalities.aspx"><cite>Linear Inequalities</cite>, Paul Dawkins</a></li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/systems-linear-equations.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
@@ -134,27 +166,31 @@
 <details>
     <summary>Mon/Tuesday – §3.1 Quadratic Functions; Parabolas </summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveQuadraticEqnsI.aspx">Quadratic Equations, Part I, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/OIEkJaPgjKs">Introduction to Solving Quadratics, Professor Leonard</a></li>
-        <li> Desmos: <a href="https://www.desmos.com/calculator/lrij0hhlq6">Quadratic Functions &amp; Parabolas</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveQuadraticEqnsI.aspx"><cite>Quadratic Equations, Part I</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/OIEkJaPgjKs"><cite>Introduction to Solving Quadratics</cite>, Professor Leonard</a></li>
+        <li> Desmos: <a href="ihttps://www.desmos.com/calculator/pjw1xq9tnx">Quadratic Functions (Parabolas) Demo</a></li>
         <li> Video: <a href="https://youtu.be/jrje73EyKag">Burning Stuff With 2000ºF Solar Power!!</a></li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/quadratic-functions-parabolas.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
 <details>
     <summary>Wednes/Thursday – §3.2 Solving Quadratic Equations </summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveQuadraticEqnsII.aspx">Quadratic Equations, Part II, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveQuadraticEqnSummary.aspx">Quadratic Equations, A Summary, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/QuadraticApps.aspx">Applications of Quadratic Equations, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Parabolas.aspx">Parabolas, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/mXAd6rkNSK0">The Square Root Method in Solving Quadratics, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/mXAd6rkNSK0">Using Factoring to Solve Quadratics, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/pYSYL_vy6YQ">Completing the Square Made Easy, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/2BUg_w1Cu9E">Proving the Quadratic Formula, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/2BUg_w1Cu9E">Using the Quadratic Formula, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/VH4tzzBVbgA">Graphing Quadratic Functions, Professor Leonard</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveQuadraticEqnsII.aspx"><cite>Quadratic Equations, Part II</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveQuadraticEqnSummary.aspx"><cite>Quadratic Equations, A Summary</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/QuadraticApps.aspx"><cite>Applications of Quadratic Equations</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Parabolas.aspx"><cite>Parabolas</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/mXAd6rkNSK0"><cite>The Square Root Method in Solving Quadratics</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/mXAd6rkNSK0"><cite>Using Factoring to Solve Quadratics</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/pYSYL_vy6YQ"><cite>Completing the Square Made Easy</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/2BUg_w1Cu9E"><cite>Proving the Quadratic Formula</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/2BUg_w1Cu9E"><cite>Using the Quadratic Formula</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/VH4tzzBVbgA"><cite>Graphing Quadratic Functions</cite>, Professor Leonard</a></li>
         <li> TI-Calc Guide: <a href="https://org.coloradomesa.edu/~mapierce2/quadratic/">Programming the Quadratic Formula into a TI-83/84+ Calculator</a></li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/solving-quadratic-equations.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
@@ -163,20 +199,25 @@
 <details>
     <summary>Mon/Tuesday – §3.3 Power and Root Functions, and Direct Variation</summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/IntegerExponents.aspx">Integer Exponents, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/RationalExponents.aspx">Rational Exponents, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Radicals.aspx">Radicals, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveRadicalEqns.aspx">Equations with Radicals, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/FXTlAPOBA_U">Power Functions, Professor Leonard</a></li>
-        <li> Desmos: <a href="https://www.desmos.com/calculator/butlihj0pa">Power &amp; Root Function </a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/IntegerExponents.aspx"><cite>Integer Exponents</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/RationalExponents.aspx"><cite>Rational Exponents</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Radicals.aspx"><cite>Radicals</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveRadicalEqns.aspx"><cite>Equations with Radicals</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/FXTlAPOBA_U"><cite>Power Functions</cite>, Professor Leonard</a></li>
+        <li> Desmos: <a href="https://www.desmos.com/calculator/butlihj0pa">Power &amp; Root Functions</a></li>
+        <li> Desmos: <a href="https://www.desmos.com/calculator/hrbwnasxyp">Population of Nigeria</a> </li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/power-root-functions.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
 <details>
     <summary>Wednes/Thursday – §3.5 Quadratic and Power Modelling</summary>
     <ul>
-        <li> TI-Calc Guide: <a href="https://education.ti.com/en/customer-support/knowledge-base/ti-83-84-plus-family/product-usage/11931">Quadratic Regression</a> </li>
+        <li> TI-Calc Guide: <a href="https://education.ti.com/en/customer-support/knowledge-base/ti-83-84-plus-family/product-usage/11931"><cite>Quadratic Regression</cite></a> </li>
         <li> Desmos: <a href="https://www.desmos.com/calculator/eeqw9g3t6w">UN World Population Model</a> </li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/quadratic-power-modelling.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
@@ -185,26 +226,30 @@
 <details>
     <summary>Mon/Tuesday - §3.4 Piecewise-Defined Functions </summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/GraphFunctions.aspx">Graphing Functions, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveAbsValueEqns.aspx">Absolute Value Equations, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveAbsValueIneq.aspx">Absolute Value Inequalities, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/KHZKgl_9o7M">How to Graph Piecewise Functions, Professor Leonard</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/GraphFunctions.aspx"><cite>Graphing Functions</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveAbsValueEqns.aspx"><cite>Absolute Value Equations</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveAbsValueIneq.aspx"><cite>Absolute Value Inequalities</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/KHZKgl_9o7M"><cite>How to Graph Piecewise Functions</cite>, Professor Leonard</a></li>
         <li> Desmos: <a href="https://www.desmos.com/calculator/b942shuvzg">GJ Water Utility Rates</a></li>
         <!-- <li> Desmos: <a href="https://www.desmos.com/calculator/lgdpyilziq">Piecewise Windchill Factor</a></li> -->
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/piecewise-defined-functions.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
 <details>
     <summary>Wednes/Thursday – §4.1 Transformations of Graphs and §4.2 Combining Functions </summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Transformations.aspx">Transformations, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Symmetry.aspx">Symmetry, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/CombineFunctions.aspx">Combining Functions, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/sTCRB6hMsC4">Introduction to Graph Transformations, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/HkrMJLSpJFI">How to Graph with Transformations, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/7N_-G4usp6Q">Operations of Functions, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/EsgHKmLSPVc">Composition of Functions, Professor Leonard</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Transformations.aspx"><cite>Transformations</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Symmetry.aspx"><cite>Symmetry</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/CombineFunctions.aspx"><cite>Combining Functions</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/sTCRB6hMsC4"><cite>Introduction to Graph Transformations</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/HkrMJLSpJFI"><cite>How to Graph with Transformations</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/7N_-G4usp6Q"><cite>Operations of Functions</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/EsgHKmLSPVc"><cite>Composition of Functions</cite>, Professor Leonard</a></li>
         <li> Desmos: <a href="https://www.desmos.com/calculator/2ftl1qpklq">Function Transformations</a></li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/transformations-combining-functions.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
@@ -213,9 +258,11 @@
 <details>
     <summary>Mon/Tuesday – §4.3 One-to-One and Inverse Functions</summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/InverseFunctions.aspx">Inverse Functions, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/C0Q_m2UDerc">One to One Functions, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/fK7IPeeZoFE">Finding Inverse Functions, Professor Leonard</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/InverseFunctions.aspx"><cite>Inverse Functions</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/C0Q_m2UDerc"><cite>One to One Functions</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/fK7IPeeZoFE"><cite>Finding Inverse Functions</cite>, Professor Leonard</a></li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/one-to-one-inverse-functions.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
@@ -243,26 +290,29 @@
 <details>
     <summary>Mon/Tuesday – §5.1 Exponential Functions </summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/ExpFunctions.aspx">Exponential Functions, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/2w14jBb0e9Q">Graphs of Exponential Functions, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/uycM-AzUDQ4">Graphing Exponential Functions with Transformations, Professor Leonard</a></li>
-        <li> Article: <a href="https://betterexplained.com/articles/an-intuitive-guide-to-exponential-functions-e/">An Intuitive Guide To Exponential Functions &amp; <var>e</var>, BetterExplained</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/ExpFunctions.aspx"><cite>Exponential Functions</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/2w14jBb0e9Q"><cite>Graphs of Exponential Functions</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/uycM-AzUDQ4"><cite>Graphing Exponential Functions with Transformations</cite>, Professor Leonard</a></li>
+        <li> Article: <a href="https://betterexplained.com/articles/an-intuitive-guide-to-exponential-functions-e/"><cite>An Intuitive Guide To Exponential Functions &amp; <var>e</var></cite>, BetterExplained</a></li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/exponential-functions.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
 <details>
     <summary>Wednes/Thursday – §5.2 Logarithmic Functions </summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/LogFunctions.aspx">Logarithmic Functions, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/jfnTwz79PWU">Introduction to Logarithms and Their Graphs, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/swC7KrDO0Uo">Graphing Logarithms with Transformations, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/u0uScdsBPfk">Properties of Logarithms, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/qCeN653SdX4">How to Expand Logarithms, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/YrU8fYchnIU">How to Combine Logarithms, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/tgcFt8zGnNE">How to Change the Base of a Logarithm, Professor Leonard</a></li>
-        <li> Article: <a href="https://betterexplained.com/articles/demystifying-the-natural-logarithm-ln/">Demystifying the Natural Logarithm (ln), BetterExplained</a></li>
-        <li> <a href="problems/logarithmic-functions.html">Class Problem Sheet</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/LogFunctions.aspx"><cite>Logarithmic Functions</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/jfnTwz79PWU"><cite>Introduction to Logarithms and Their Graphs</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/swC7KrDO0Uo"><cite>Graphing Logarithms with Transformations</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/u0uScdsBPfk"><cite>Properties of Logarithms</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/qCeN653SdX4"><cite>How to Expand Logarithms</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/YrU8fYchnIU"><cite>How to Combine Logarithms</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/tgcFt8zGnNE"><cite>How to Change the Base of a Logarithm</cite>, Professor Leonard</a></li>
+        <li> Article: <a href="https://betterexplained.com/articles/demystifying-the-natural-logarithm-ln/"><cite>Demystifying the Natural Logarithm (ln)</cite>, BetterExplained</a></li>
     </ul>
+    <ul class="inline">
+        <li> <a href="problems/logarithmic-functions.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
 
@@ -270,26 +320,31 @@
 <details>
     <summary>Mon/Tuesday – §5.3 Exponential and Logarithmic Equations </summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveLogEqns.aspx">Solving Logarithmic Equations, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/ExpLogApplications.aspx">Applications, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/KezbqAAlOZk">Introduction to Solving Logarithms and Exponentials, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/gkUWLFontZU">Solving Exponential Functions with Common Bases, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/82fonULPl64">Solving Logarithms with Common Bases, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/jNUyVClUQfc">Solving Logarithmic Equations with Exponentials, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/rDcLCA2W-UI">Solving Exponential Equations wit Logarithms, Professor Leonard</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveLogEqns.aspx"><cite>Solving Logarithmic Equations</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/ExpLogApplications.aspx"><cite>Applications</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/KezbqAAlOZk"><cite>Introduction to Solving Logarithms and Exponentials</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/gkUWLFontZU"><cite>Solving Exponential Functions with Common Bases</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/82fonULPl64"><cite>Solving Logarithms with Common Bases</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/jNUyVClUQfc"><cite>Solving Logarithmic Equations with Exponentials</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/rDcLCA2W-UI"><cite>Solving Exponential Equations wit Logarithms</cite>, Professor Leonard</a></li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/exponential-logarithmic-equations.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
 <details>
     <summary>Wednes/Thursday – §5.4 Exponential and Logarithmic Models </summary>
     <ul>
-        <li> Lecture: <a href="https://youtu.be/rO-C48LY2KY">Exponential Growth and Decay, Professor Leonard</a></li>
-        <li> Article: <a href="https://betterexplained.com/articles/using-logs-in-the-real-world/">Using Logarithms in the Real World, BetterExplained</a></li>
-        <li> Desmos: <a href="https://www.desmos.com/calculator/rtv75d8bpt">The Population of Nigeria 1960–2021</a> </li>
+        <li> Lecture: <a href="https://youtu.be/rO-C48LY2KY"><cite>Exponential Growth and Decay</cite>, Professor Leonard</a></li>
+        <li> Article: <a href="https://betterexplained.com/articles/using-logs-in-the-real-world/"><cite>Using Logarithms in the Real World</cite>, BetterExplained</a></li>
+        <li> Desmos: <a href="https://www.desmos.com/calculator/hrbwnasxyp">Population of Nigeria</a> </li>
         <li> Desmos: <a href="https://www.desmos.com/calculator/qissvkodje">Logarithmic Modelling</a> </li>
         <li> Desmos: <a href="https://www.desmos.com/calculator/uks3ny4cll">US Life Expectancy</a> </li>
         <li> Desmos: <a href="https://www.desmos.com/calculator/m328tsdz7y">Ebola Epidemic</a> </li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/exponential-logarithmic-models.html">Class Problem Sheet</a></li>
+        <li> Ebola Project </li>
     </ul>
 </details> 
 
@@ -297,23 +352,28 @@
 <details>
     <summary>Mon/Tuesday – §5.5 Exponential Functions and Investing </summary>
     <ul>
-        <li> Article: <a href="https://betterexplained.com/articles/a-visual-guide-to-simple-compound-and-continuous-interest-rates/">A Visual Guide to […] Interest Rates, BetterExplained</a></li>
-        <li> Article: <a href="https://www.investopedia.com/terms/e/exponential-growth.asp">Exponential Growth […], Investopedia</a> </li>
-        <li> Article: <a href="https://www.investopedia.com/terms/c/compounding.asp">What Is Compounding?, Investopedia</a> </li>
-        <li> Article: <a href="https://www.investopedia.com/personal-finance/apr-apy-bank-hopes-cant-tell-difference/">APR vs APY: What’s the Difference?, Investopedia</a> </li>
-        <li> Article: <a href="https://www.investopedia.com/terms/e/eulers-constant.asp">Euler’s Number […] Used in Finance, Investopedia</a> </li>
+        <li> Article: <a href="https://betterexplained.com/articles/a-visual-guide-to-simple-compound-and-continuous-interest-rates/"><cite>A Visual Guide to … Interest Rates</cite>, BetterExplained</a></li>
+        <li> Article: <a href="https://www.investopedia.com/terms/e/exponential-growth.asp"><cite>Exponential Growth …</cite>, Investopedia</a> </li>
+        <li> Article: <a href="https://www.investopedia.com/terms/c/compounding.asp"><cite>What Is Compounding?</cite>, Investopedia</a> </li>
+        <li> Article: <a href="https://www.investopedia.com/personal-finance/apr-apy-bank-hopes-cant-tell-difference/"><cite>APR vs APY: What’s the Difference?</cite>, Investopedia</a> </li>
+        <li> Article: <a href="https://www.investopedia.com/terms/e/eulers-constant.asp"><cite>Euler’s Number … Used in Finance</cite>, Investopedia</a> </li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/exponential-investing.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
 <details>
     <summary>Wednes/Thursday – §5.6 Annuities; Loan Repayment </summary>
     <ul>
-        <li> Article: <a href="https://www.investopedia.com/terms/a/annuity.asp">Guide to Annuities […], Investopedia </a> </li>
-        <li> Article: <a href="https://www.investopedia.com/ask/answers/070915/what-difference-between-present-value-annuity-and-future-value-annuity.asp">Present Value Vs. Future Value in Annuities, Investopedia</a> </li>
-        <li> Article: <a href="https://www.investopedia.com/terms/p/present-value-annuity.asp">Present Value of an Annuity […], Investopedia</a> </li>
-        <li> Article: <a href="https://www.investopedia.com/terms/f/future-value-annuity.asp">Future Value of an Annuity […], Investopedia</a> </li>
-        <li> Article: <a href="https://www.investopedia.com/terms/a/annuity-table.asp">Annuity Table, Investopedia</a> </li>
+        <li> Article: <a href="https://www.investopedia.com/terms/a/annuity.asp"><cite>Guide to Annuities …</cite>, Investopedia </a> </li>
+        <li> Article: <a href="https://www.investopedia.com/ask/answers/070915/what-difference-between-present-value-annuity-and-future-value-annuity.asp"><cite>Present Value Vs. Future Value in Annuities</cite>, Investopedia</a> </li>
+        <li> Article: <a href="https://www.investopedia.com/terms/p/present-value-annuity.asp"><cite>Present Value of an Annuity …</cite>, Investopedia</a> </li>
+        <li> Article: <a href="https://www.investopedia.com/terms/f/future-value-annuity.asp"><cite>Future Value of an Annuity …</cite>, Investopedia</a> </li>
+        <li> Article: <a href="https://www.investopedia.com/terms/a/annuity-table.asp"><cite>Annuity Table</cite>, Investopedia</a> </li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/annuities.html">Class Problem Sheet</a></li>
+        <li> <a href="assignments/finance">Personal Finance Project</a> </li>
     </ul>
 </details> 
 
@@ -324,6 +384,8 @@
         <li> Desmos: <a href="https://www.desmos.com/calculator/hkzaqekiec">Logistic and Gompertz Functions</a> </li>
         <li> Desmos: <a href="https://www.desmos.com/calculator/zp8glfmszs">Population of China</a> </li>
         <li> Desmos: <a href="https://www.desmos.com/calculator/mhuk8tri1l">Ebola Epidemic</a> </li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/logistic-gompertz.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
@@ -346,49 +408,57 @@
 <details>
     <summary>Mon/Tuesday – §6.1 Higher-Degree Polynomial Functions </summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Polynomials.aspx">Polynomials, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/6Uh3Z6DJ_pI">Introduction to Polynomial Functions, Professor Leonard</a></li>
-        <li> Desmos: <a href="https://www.desmos.com/calculator/7mzhrztiut">$TWTR Regression</a> </li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Polynomials.aspx"><cite>Polynomials</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/6Uh3Z6DJ_pI"><cite>Introduction to Polynomial Functions</cite>, Professor Leonard</a></li>
+        <li> Desmos: <a href="https://www.desmos.com/calculator/7mzhrztiut">$TWTR Regression Example</a> </li>
         <li> Desmos: <a href="https://www.desmos.com/calculator/x0okpyzajj">GJ Average Daily Temperature 2021</a> </li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/higher-degree-polynomial.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
 <details>
     <summary>Wednes/Thursday – §6.2 Cubic and Quartic Functions </summary>
     <ul>
-        <li> TI-Calc Guide <a href="https://education.ti.com/en/customer-support/knowledge-base/ti-83-84-plus-family/product-usage/11919">Calculating cubic regression</a> </li>
-        <li> TI-Calc Guide <a href="https://education.ti.com/en/customer-support/knowledge-base/ti-83-84-plus-family/product-usage/11931">Calculating quartic regression</a> </li>
+        <li> TI-Calc Guide <a href="https://education.ti.com/en/customer-support/knowledge-base/ti-83-84-plus-family/product-usage/11919"><cite>Calculating cubic regression</a> </li>
+        <li> TI-Calc Guide <a href="https://education.ti.com/en/customer-support/knowledge-base/ti-83-84-plus-family/product-usage/11931"><cite>Calculating quartic regression</a> </li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/cubic-quartic-functions.html">Class Problem Sheet</a></li>
-        <li> <a href="docs/sequel-regression">Regression Project Sequel</a> </li>
+        <li> <a href="assignments/assignments-sequel">Regression Project Sequel</a> </li>
     </ul>
 </details> 
 
 <h3 id="fifteen">Week Fifteen · April 29</h3>
 <details>
-    <summary>Mon/Tuesday – §6.3 Solution of Polynomial Equations </summary>
+    <summary>Mon/Tuesday – §6.3 Solving Polynomial Equations </summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/ReducibleToQuadratic.aspx">Equations Reducible To Quadratic In Form, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/GraphingPolynomials.aspx">Graphing Polynomials, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Factoring.aspx">Factoring Polynomials, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/v-pnhWbHmQ8">Creating Polynomials from Real Zeros, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/Gxh-mEt1K-o">Multiplicity and End Behavior of Polynomials, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/6MAtqY6Fqjs">How to Sketch Polynomial Functions, Professor Leonard</a></li>
-        <li> Article: <a href="https://www.investopedia.com/terms/w/weightedaverage.asp">Weighted Average […], Investopedia </a> </li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/ReducibleToQuadratic.aspx"><cite>Equations Reducible To Quadratic In Form</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/GraphingPolynomials.aspx"><cite>Graphing Polynomials</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/Factoring.aspx"><cite>Factoring Polynomials</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/v-pnhWbHmQ8"><cite>Creating Polynomials from Real Zeros</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/Gxh-mEt1K-o"><cite>Multiplicity and End Behavior of Polynomials</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/6MAtqY6Fqjs"><cite>How to Sketch Polynomial Functions</cite>, Professor Leonard</a></li>
+        <li> Article: <a href="https://www.investopedia.com/terms/w/weightedaverage.asp"><cite>Weighted Average … Investopedia </a> </li>
         <li> <a href="docs/poly-history">An Embellished History of Factoring Polynomials</a></li>
-        <li> <a href="problems/solutions-polynomial-equations.html">Class Problem Sheet</a></li>
+    </ul>
+    <ul class="inline">
+        <li> <a href="problems/solving-polynomial-equations.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
 <details> 
     <summary>Wednes/Thursday – §6.4 The Fundamental Theorem of Algebra</summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/ZeroesOfPolynomials.aspx">Zeroes/Roots Of Polynomials, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/FindingZeroesOfPolynomials.aspx">Finding Zeros of Polynomials, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/g7wEpxwgB3w">How to Use the Rational Zeros Theorem, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/xuhk2kSVwe0">Finding ALL Solutions of Polynomials, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/AKJgo-WR_K4">Synthetic Division and Long Division of Polynomials, Professor Leonard</a></li>
-        <li> <a href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra">Wikipedia: The Fundamental Theorem of Algebra </a></li>
-        <li> <a href="https://samuelj.li/complex-function-plotter/#z">Samuel Li’s Complex Function Plotter</a></li>
-        <li> <a href="https://en.wikipedia.org/wiki/Rational_root_theorem">Wikipedia: Rational Root Theorem</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/ZeroesOfPolynomials.aspx"><cite>Zeroes/Roots Of Polynomials</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/FindingZeroesOfPolynomials.aspx"><cite>Finding Zeros of Polynomials</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/g7wEpxwgB3w"><cite>How to Use the Rational Zeros Theorem</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/xuhk2kSVwe0"><cite>Finding All Solutions of Polynomials</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/AKJgo-WR_K4"><cite>Synthetic Division and Long Division of Polynomials</cite>, Professor Leonard</a></li>
+        <li> Article: <a href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra"><cite>The Fundamental Theorem of Algebra</cite>, Wikipedia </a></li>
+        <li> Article: <a href="https://en.wikipedia.org/wiki/Rational_root_theorem"><cite>Rational Root Theorem</cite>, Wikipedia</a></li>
+        <li class="extra"> Tool: <a href="https://samuelj.li/complex-function-plotter/#z">Samuel Li’s Complex Function Plotter</a></li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/fundamental-theorem-algebra.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
@@ -397,31 +467,34 @@
 <details>
     <summary>Mon/Tuesday – §6.5 Rational Functions </summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/RationalExpressions.aspx">Rational Expressions, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/GraphRationalFcns.aspx">Rational Functions, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/DividingPolynomials.aspx">Dividing Polynomials, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/y-bSJaEonho">Finding Vertical Asymptotes of Rational Functions, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/-k4uXF4hsAs">Graphing Rational Functions with Transformations, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/D-H9N-_Y77Y">Finding a Horizontal Asymptote of a Rational Function, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/NVhaVk4wNu8">Finding an Oblique Asymptote of a Rational Function, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/tyXWPcvSQvk">Finding Asymptotes and Holes of Rational Functions, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/wHATRiYbPPA">Graphing Rational Functions, Professor Leonard</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/RationalExpressions.aspx"><cite>Rational Expressions</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/GraphRationalFcns.aspx"><cite>Rational Functions</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/DividingPolynomials.aspx"><cite>Dividing Polynomials</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/y-bSJaEonho"><cite>Finding Vertical Asymptotes of Rational Functions</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/-k4uXF4hsAs"><cite>Graphing Rational Functions with Transformations</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/D-H9N-_Y77Y"><cite>Finding a Horizontal Asymptote of a Rational Function</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/NVhaVk4wNu8"><cite>Finding an Oblique Asymptote of a Rational Function</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/tyXWPcvSQvk"><cite>Finding Asymptotes and Holes of Rational Functions</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/wHATRiYbPPA"><cite>Graphing Rational Functions</cite>, Professor Leonard</a></li>
+    </ul>
+    <ul class="inline">
         <li> <a href="problems/rational-functions.html">Class Problem Sheet</a></li>
     </ul>
 </details> 
 <details>
     <summary>Wednes/Thursday – §6.6 Rational Inequalities </summary>
     <ul>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolvePolyInequalities.aspx">Polynomial Inequalities, Paul Dawkins</a></li>
-        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveRationalInequalities.aspx">Rational Inequalities, Paul Dawkins</a></li>
-        <li> Lecture: <a href="https://youtu.be/qFJ-Mq0XcTI">Inequalities with Polynomial Functions, Professor Leonard</a></li>
-        <li> Lecture: <a href="https://youtu.be/QSh1xcbYKZk">Inequalities with Rational Functions, Professor Leonard</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolvePolyInequalities.aspx"><cite>Polynomial Inequalities</cite>, Paul Dawkins</a></li>
+        <li> Notes: <a href="https://tutorial.math.lamar.edu/Classes/Alg/SolveRationalInequalities.aspx"><cite>Rational Inequalities</cite>, Paul Dawkins</a></li>
+        <li> Lecture: <a href="https://youtu.be/qFJ-Mq0XcTI"><cite>Inequalities with Polynomial Functions</cite>, Professor Leonard</a></li>
+        <li> Lecture: <a href="https://youtu.be/QSh1xcbYKZk"><cite>Inequalities with Rational Functions</cite>, Professor Leonard</a></li>
     </ul>
 </details> 
 
 <h2 id="final">Final Exam</h2>
 <ul>
-    <li>Wednesday May 15 @ 10am</li>
+    <li>Section 005 → Monday May 13 @ 10am</li>
+    <li>Section 001 → Wednesday May 15 @ 10am</li>
 </ul> 
 </nav> 
 </main> 
@@ -429,8 +502,7 @@
 <footer>
 <ul>
     <li> © <a href="https://org.coloradomesa.edu/~mapierce2/">Mike Pierce</a> </li>
-    <li> <a href="https://www.coloradomesa.edu/math-stat">CMU Math</a> </li>
-    <li> License <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></li>
+    <li> HTML/Content License <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></li>
 </ul>
 </footer>
 </body>
