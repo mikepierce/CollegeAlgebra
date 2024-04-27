@@ -5,8 +5,8 @@ set xtics axis scale 1,0.33 offset 0,0.33 1
 set mxtics 1
 set ytics axis scale 1,0.33 2
 set mytics 2
-set xrange [-1.5:3.5]
-set yrange [-1:5]
+set xrange [-2.67:4.67]
+set yrange [-2.33:6.33]
 set zeroaxis linewidth 1 linecolor "#a0a0a0" linetype 1
 set grid noxtics noytics front ### to get xtics/ytics labels in front
 
@@ -27,7 +27,7 @@ set style fill transparent solid 0.5
 
 ### 2:1 Aspect Ratio to PDF
 #set terminal epslatex size 6.5in,3.25in standalone header "\\usepackage{fourier}" 
-set terminal epslatex size 3in,1.5in standalone header "\\usepackage{fourier}" 
+set terminal epslatex size 4in, 2in standalone header "\\usepackage{fourier}" 
 set output "main.tex"
 
 ### 5:2 Aspect Ratio to PDF

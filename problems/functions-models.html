@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" media="all" href="../../assets/main.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <style> @media only print { body {margin:0.33in 0.67in 0.33in 0.67in; width:auto; font-size:12pt;} main {column-count:1;} h1 {font-size:2em;} } </style>
     <style>body{background-image:linear-gradient(transparent, var(--background)), url("../banner.webp");}</style>
 </head>
 
@@ -26,61 +25,76 @@
 <div class="name print"></div>
 <ol>
     <li>
-        For each of the following depictions of a function,
-        do these four things: 
-        determine the output corresponding to an input of \(3,\)
-        determine the output corresponding to an input of \(-1,\)
-        describe the domain, and describe the range.
-        <ol>
-            <li>
-                The graph \(y = f(x):\)
-                <figure>
-                <img width="216" src="img/simple-plot/out.png">
-                <div class="hfill"></div>
-                </figure>
-            </li>
-            <li class="skip-half">
-                A table of <em>all</em> input/output pairs
-                of a function \(\ell:\)
-                <figure>
-                <table>
-                <tbody>
-                    <tr> 
-                        <th>input \(x\)</th> 
-                        <td>-3</td>  
-                        <td>-2</td>  
-                        <td>-1</td> 
-                        <td>0</td> 
-                        <td>1</td>  
-                        <td>2</td>  
-                        <td>3</td>  
-                    </tr>
-                    <tr> 
-                        <th>output \(\ell(x)\)</th> 
-                        <td>18</td> 
-                        <td>531</td>
-                        <td>341.1</td>
-                        <td>-90</td>
-                        <td>6013</td>
-                        <td>-6</td>
-                        <td>0</td>
-                    </tr>
-                </tbody>
-                </table>
-                <div class="hfill"></div>
-                </figure>
-            </li>
-            <li class="skip-one">
-                A function \(M\) defined explicitly
-                in terms of a formula: \(M(x) = x^3 - 10x + 7\)
-            </li>
-        </ol>
+        <p>
+            Below is the graph of a function \(y = f(x).\)
+            Estimating from the graph,
+            what is the value of \(f(3)?\)
+            What is the value of \(f(0)?\)
+            For what value(s) of \(x\) does \(f(x) = 0?\)
+        </p>
+        <figure>
+            <img width="324" src="img/simple-plot/out.png">
+            <div class="hfill"></div>
+        </figure>
+    </li>
+    <li class="skip-one">
+        <p>
+            Here’s a  table of <em>some</em> input/output pairs
+            of a function \(\ell.\)
+            What is the value of \(\ell(3)?\)
+            What is the value of \(\ell(-1)?\)
+            For what value(s) of \(x\) does \(\ell(x) = 0?\)
+        </p>
+        <figure>
+        <table>
+        <tbody>
+            <tr> 
+                <th>input \(x\)</th> 
+                <td>-5</td>  
+                <td>-4</td>  
+                <td>-3</td>  
+                <td>-2</td>  
+                <td>-1</td> 
+                <td>0</td> 
+                <td>1</td>  
+                <td>2</td>  
+                <td>3</td>  
+                <td>4</td>  
+                <td>5</td>  
+            </tr>
+            <tr> 
+                <th>output \(\ell(x)\)</th> 
+                <td>0.03</td> 
+                <td>99</td> 
+                <td>18</td> 
+                <td>0</td>
+                <td>341.1</td>
+                <td>-90</td>
+                <td>6013</td>
+                <td>-6</td>
+                <td>0</td>
+                <td>3.1415</td>
+                <td>420</td>
+            </tr>
+        </tbody>
+        </table>
+        <div class="hfill"></div>
+        </figure>
     </li>
     <li class="skip-page">
+        A function \(M\) with domain of all real numbers,
+        is defined explicitly in terms of a formula, 
+        \(M(x) = x^3 - 10x^2 + 7.\)
+        What is the output of \(M\) 
+        corresponding to an input of \(3?\)
+        What is the value of \(M(-1)?\)
+        What is the range of \(M?\)
+    </li>
+    <li class="skip-one-half">
         This table of input/output values 
         <em>supposedly</em> describes a function \(f,\)
         but there’s a problem. What’s the problem?
-        Why isn’t \(f\) really a function?
+        Can you explain why \(f\) isn’t really a function?
         <figure>
         <table>
         <tbody>
@@ -106,8 +120,8 @@
                 <td>31</td>
                 <td>-9</td>
                 <td>12</td>
-                <td>4</td>
-                <td>4</td>
+                <td>5</td>
+                <td>5</td>
                 <td>43</td>
                 <td>9</td>
                 <td>…</td>
@@ -164,34 +178,38 @@
             <li class="skip-one">
                 Does the data in this data describe Clapton’s weight 
                 as a function of time?
-                What did you have to check to answer  this?
+                What did you have to check to answer this?
             </li>
-            <li class="skip-half">
+            <li class="skip-third">
                 How much did Clapton weight
                 on the 11<sup>th</sup> day of the month?
             </li>
-            <li class="skip-half">
+            <li class="skip-third">
                 On what day(s) did Clapton weight 173lbs?
             </li>
-            <li class="skip-half">
+            <!--
+            <li class="skip-third">
                 Between which pairs of days
                 did Clapton lose the most weight?
             </li>
-            <li class="skip-one">
+            -->
+            <li class="skip-third">
                 How much total weight did Clapton lose
                 over those fourteen days? 
             </li>
-            <li class="skip-one hard">
+            <li class="hard">
                 On average, how much weight did Clapton lose per day?
             </li>
         </ol>
     </li>
     <li class="skip-page">
         Below is the graph of a function \(y = C(t)\)
-        that models the price (USD) of Twitter (TWTR) stock 
-        at the end of the \(t\)<sup>th</sup> week of 2022, 
-        leading up to October 27th (\(t = 44\))
-        when Elon Musk bought it and it was de-listed from the NYSE.
+        that models the price, in dollars (USD), 
+        of a single <em>share</em> of Twitter (TWTR) stock 
+        at the end of the week \(t\) of the year 2022, 
+        leading up to October 27th, \(t = 44,\)
+        when Elon Musk bought Twitter 
+        and it was de-listed from the New York Stock Exchange.
         <figure> <img width="540" src="img/twitter/out.png"> </figure>
         <ol>
             <li class="skip-half">
@@ -204,17 +222,18 @@
             </li>
             <li class="skip-half">
                 Estimating, for what week(s) of 2022
-                was the price of Twitter stock $40?
+                was the price of one share of Twitter stock $40?
             </li>
             <li class="skip-one">
                 According to this model, 
-                during what <em>months</em> of 2022 
-                was the price of Twitter’s stock increasing?
+                during what <em>months</em> of 2022 was the price 
+                of shares in Twitter’s stock increasing?
             </li>
         </ol>
     </li>
     <li>
-        If a ball is thrown into the air at 17 meters-per-second,
+        If a ball is thrown into the air 
+        at a speed 17 meters-per-second,
         its height (in meters) measured \(t\) seconds after being released
         can be modelled by the function
         \[ h(t) = 1.7 + 17t - 4.9t^2 \,. \]
@@ -224,7 +243,7 @@
                 and what does this value mean in the context of the model?
             </li>
             <li class="skip-half">
-                What is the height of the ball four seconds after being thrown?
+                What is the height of the ball three seconds after being thrown?
             </li>
             <li class="skip-one">
                 When the ball comes back down and hits the ground,

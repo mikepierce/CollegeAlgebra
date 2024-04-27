@@ -11,10 +11,8 @@
     <link rel="shortcut icon" type="image/png" href="../../assets/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="all" href="../../assets/main.css">
-    <link rel="stylesheet" type="text/css" media="all" href="../print.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <style> @media only print { body {margin:0.33in 0.67in 0.33in 0.67in; width:auto; font-size:12pt;} main {column-count:1;} h1 {font-size:2em;} } </style>
     <style>body{background-image:linear-gradient(transparent, var(--background)), url("../banner.webp");}</style>
 </head>
 
@@ -64,8 +62,8 @@
     </li>
     <li class="skip-page">
         Over the course of his life, 
-        Billiam has saved up $1.2 million 
-        in a retirement account that yields 2.5% annual interest.
+        Billiam has saved up $1.2 million in a retirement account 
+        that yields 2.5% annual interest compounded monthly.
         He’s 67 now, and ready to retire.
         <ol>
             <li>
@@ -76,18 +74,9 @@
             <li>
                 Billiam decides that’s not enough money per month
                 to support his extravagant lifestyle,
-                so he withdraws $7000 per month in his retirement instead.
-                How old will Billiam be when he runs out of money?
+                so he proposes to withdraw $7000 per month in his retirement instead.
+                At this rate, how old will Billiam be when he runs out of money?
                 <!-- 17.7 years later -->
-            </li>
-            <li class="hard">
-                Billiam finds this unacceptable! 
-                He is convinced he’ll live to be 100-years-old,
-                and he will settle for no less than $7000 per month in his retirement.
-                The only option then is to defer his retirement and keep working.
-                If Billiam can contribute $2,200 per month 
-                into his retirement account while he’s working,
-                when can he finally retire?
             </li>
         </ol>
     </li>
@@ -95,12 +84,22 @@
         Suppose you are contributing $600 a month 
         into a savings annuity account, intended to be your retirement account,
         that pays an annual interest rate of 3.7% compounded monthly. 
+        Recall that the formula relating these values 
+        to the current account balance \(S\) after \(t\) years is
+        \[S = P\Biggl(\frac{\bigl(1+\frac{r}{12}\bigr)^{12t}-1}{\frac{r}{12}}\Biggr)\,.\]
         <ol>
-            <li class="skip-four">
-                Using just a desk calculator (TI or phone), 
-                manually calculate the balance of your annuity account 
+            <li class="skip-three">
+                Manually calculate the balance of your annuity account 
                 40 years in the future.
             </li>
+            <li class="skip-three">
+                Suppose this amount from the last part
+                is not enough for you to retire.
+                You think $1.8 million should be enough to retire on.
+                You still want to retire in 40 years though.
+                Instead of $600, how much should you contribute per month?
+            </li>
+            <!--
             <li>
                 Now using the <code>Excel</code> spreadsheet 
                 that has been pre-programmed with the annuity formulas
@@ -132,6 +131,7 @@
                     </li>
                 </ol>
             </li>
+            -->
         </ol>
     </li>
     <li>
@@ -141,136 +141,90 @@
         on the remaining balance of $251,200.
         Recall that the formula relating these values 
         to your monthly mortgage payments \(P\) is
-        \[S = P\left(\frac{1-\left(1+\frac{r}{12}\right)^{-12t}}{\frac{r}{12}}\right)\,.\]
+        \[S = P\Biggl(\frac{1-\bigl(1+\frac{r}{12}\bigr)^{-12t}}{\frac{r}{12}}\Biggr)\,.\]
         <ol>
+            <!--
             <li class="skip-one-half">
                 <em>Before plugging in numbers</em>,
                 solve this equation for \(P\) 
                 so you have a formula for your monthly mortgage payments.
                 (Think before you start—this can be done in one step.)
             </li>
-            <li class="skip-page">
-                Using this formula, 
-                calculate what your monthly payments would be
+            -->
+            <li class="skip-four">
+                Manually calculate what your monthly payments would be
                 if you got a 15-year mortgage versus a 30-year mortgage.
             </li>
-            <li class="skip-two">
+            <li class="skip-page">
                 Because the balance of the mortgage 
                 accrues interest while you are paying it off,
                 the total amount you pay will be more 
-                than the initial mortgage amount;
-                you are paying for the interest too.
+                than the initial mortgage amount
+                since you are paying for the interest too.
                 Using your answers to the previous question,
                 calculate how much money you’d be paying <em>total</em>
                 in the case of a 15-year mortgage and the case of a 30-year mortgage.
                 (Hint: don’t overthink these calculations.)
             </li>
+            <li class="skip-page">
+                Unable to afford a 15-year mortgage,
+                you decide to go with the 30-year option.
+                You can however afford to pay more towards this mortgage
+                than the minimum required monthly payments that you calculated.
+                Supposing you pay $300 per month towards your mortgage
+                in addition to the regular monthly payment,
+                how long will it be before you’ve paid off the entire mortgage?
+            </li>
+            <!--
             <li>
-                Now using the <strong>Mortgage</strong> worksheet
-                of the <code>Excel</code> spreadsheet,
+                Now using the <code>Excel</code> spreadsheet,
                 check your calculations from the previous questions.
             </li>
+            -->
         </ol>
     </li>
     <li>
-        Using the <strong>Mortgage</strong> worksheet
-        to perform the calculations you need to answer these questions
-        about a 30-year mortgage on a $360,000 home
-        at a 5.5% annual interest rate,
+        Do some research to figure out
+        (1) the median price of a house in the town/city 
+        where you plan on working after college,
+        and (2) the current federal interest rate
+        from which mortgage rates are determined.
+        Suppose you take out a mortgage on such a house
+        for the typical 30-year term.
         <ol>
-            <li class="skip-one">
-                What will the monthly mortgage payments be?
+            <li class="skip-three">
+                What will your monthly mortgage payments be?
             </li>
-            <li class="skip-page">
-                Multiply the monthly mortgage payment by \(12\)
-                to figure out the annual housing cost. 
+            <li class="skip-two">
+                Multiply that monthly mortgage payment by 12
+                to figure out your annual housing cost. 
                 Now, the classical advice is that 
-                ”no more than 28% of a person’s income
-                should go towards housing.”
+                ”no more than 28% of a person’s take-home pay
+                (income after taxes) should go towards housing.”
                 Adhering to this rule, 
-                what would a person’s annual income (after taxes)
-                need to be to afford this mortgage?
+                what would your annual take-home pay need to be
+                to afford this mortgage?
+                What annual income (pre-taxes) would you need?
             </li>
         </ol>
     </li>
 </ol>
 
-<h3>Your Own Financials</h3>
+<h3>Challenges</h3>
 <ol>
     <li>
-    <p>
-        While you’ve got the <strong>Mortgage</strong> worksheet open,
-        you might as well play with numbers to get a sense
-        of what your personal situation will be 
-        when/if you decide to buy a home.
-        There’s two critical questions to answer:
-    </p>
-    <ul>
-        <li> Where do you plan on buying a home (living)?  </li>
-        <li> What sort of income do you anticipate having?  </li>
-    </ul>
-    <p>
-        Look up average home prices in the area you’re planning on living,
-        but also look up lower-end home prices 
-        (if there are enough luxury homes in the area, 
-        they’ll skew the average, making it misleading).
-        Then try to estimate your future annual income:
-        if you have a career/title in mind, 
-        look up <em>starting salaries/earnings</em> for that career.
-    </p>
-    <p>
-        Some quick facts:
-        First, the vast majority of mortgages have a 30-year term,
-        so use \(N=30\) unless you have a good reason otherwise.
-        Next, the typical interest rate of a mortgage is set by the 
-        <a href="https://www.forbes.com/advisor/investing/federal-funds-rate/">Federal Funds Rate</a>.
-        Look up what this currently is for your mortgage rate \(r\), 
-        and look up any news on speculation 
-        for how it will change in the future.
-        Last, the classic advice is that 
-        “28% of your gross income should go towards housing.”
-        This advice is suspect given recent trends
-        in the housing market and labor market,
-        but should still be considered when deciding 
-        what monthly mortgage payment \(P\) you can afford
-        given your projected income.
-    </p>
-    </li>
-    <li>
-    <p>
-        Notice that there’s <strong>Student Loans</strong> worksheet 
-        in this Excel file too.
-        If you have them, you could take this time 
-        to work out the details of your own student loans
-        <span class="print">(You don’t have to write anything on this page!)</span>
-        What is the interest rate on your loans?
-        How much are you taking out in loans each year/semester?
-        There’s one initial important thing to know:
-        are your loans subsidized or unsubsidized?
-        <ul>
-            <li>
-                Subsidized students loans don’t accrue interest
-                while you are still attending school 
-                and during some “grace period” after graduation
-                until (ideally) you find employment,
-                because the government is paying the interest.
-            </li>
-            <li>
-                Unsubsidized loans simply accrue interest.
-            </li>
-        </ul>
-        While you are not making payments, 
-        if your loans are accruing interest
-        the balance of your student debt
-        can be calculated using the formula for compound interest.
-        As soon as you begin making payments,
-        interest is still accruing,
-        so the balance will be described the annuity formula
-        we’ve been discussing.
-    </p>
+        Recall Billiam’s situation from earlier.
+        Suppose Billiam is convinced he will live to 100-years-old 
+        <em>and</em> will settle for no less than $7000 per month during his retirement.
+        The only option then is to defer his retirement and keep working.
+        If Billiam can contribute $2,200 per month 
+        into his retirement account while he’s still working,
+        when can he finally retire?
     </li>
 </ol>
-
+<!-- 
+<h3>a Puzzle</h3>
+-->
 </main>
 </body>
 

@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" media="all" href="../../assets/main.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <style> @media only print { body {margin:0.33in 0.67in 0.33in 0.67in; width:auto; font-size:12pt;} main {column-count:1;} h1 {font-size:2em;} } </style>
     <style>body{background-image:linear-gradient(transparent, var(--background)), url("../banner.webp");}</style>
 </head>
 
@@ -75,7 +74,7 @@
             </li>
             <li class="skip-two">
                 Within the context of the model,
-                what do the numbers \(1.76\) and \(0.05\) represent?
+                what do the parameters \(1.76\) and \(0.05\) represent?
             </li>
             <li class="skip-page">
                 What does the model predict 
@@ -90,7 +89,7 @@
                 <table>
                 <tbody>
                     <tr> 
-                        <th>Years since 1980</th> <td>10</td>  <td>15</td>  <td>20</td>  <td>25</td>  <td>30</td>  <td>35</td>  <td>40</td>  <td>45</td> <td>50</td> 
+                        <th>Years since 1970</th> <td>10</td>  <td>15</td>  <td>20</td>  <td>25</td>  <td>30</td>  <td>35</td>  <td>40</td>  <td>45</td> <td>50</td> 
                     </tr>
                     <tr> 
                         <th>TPI (in trillions)</th> <td>2.32</td>  <td>3.52</td>  <td>4.91</td> <td>6.28</td> <td>8.62</td>  <td>10.55</td>  <td>12.56</td>  <td>15.47</td>  <td>19.63</td>  
@@ -99,20 +98,21 @@
                 </table>
                 </figure>
                 </div>
-                Carefully sketch a scatter-plot of the data
+                Sketch a scatter-plot of the data
                 along with the graph \(y = P(t)\)
                 on these axes to visually verify
                 that \(P\) is a reasonable model for the data.
+                Protip: plan your axis scaling first.
                 <figure> <img width="864" src="img/axes-firstquad/out.png"> </figure>
             </li>
-            <li class="skip-one-half">
-                By testing various inputs, 
-                can you find which year the model predicts
+            <li class="skip-page">
+                Exactly what year does the model predict
                 the US will have a total personal income
                 of $25 trillion? 
                 What about $100 trillion?
                 What about $1 quadrillion?
             </li>
+            <!--
             <li class="skip-page">
                 <p>
                 Just based on the shape of the data in the scatter plot,
@@ -132,6 +132,7 @@
                 a power function of the form \(at^b.\)
                 </p>
             </li>
+            -->
         </ol>
     </li>
     <li>
@@ -191,26 +192,27 @@
                 with \(t\) being the number of years since 1900.
             </li>
             <li>
+                <p>
                 Using technology,
                 plot the graphs of each of these functions
                 along with the data on the same set of axis
-                and decide which model fits the data best.
+                and choose which model you think fits the data best.
                 On your plot make sure the domain of \(t\)
                 matches up with the years 1920–2030.
-            </li>
-            <li class="skip-half">
+                </p>
+                <p>
                 Between these two models, 
                 which one predicts life expectancy 
                 will increase <em>more</em> in the future?
                 I.e. which of these models is more optimistic?
+                </p>
             </li>
             <li class="skip-one">
-                What does the model that you decided
-                fits the data best predict your own life expectancy to be?
+                What does the model you chose
+                predict your own life expectancy to be?
             </li>
             <li class="skip-page">
-                What does the model that you decided
-                fits the data best predict
+                What does the model you chose predict
                 the life expectancy of a baby born today to be?
             </li>
             <li class="skip-two">

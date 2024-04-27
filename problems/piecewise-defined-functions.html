@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" media="all" href="../../assets/main.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <style> @media only print { body {margin:0.33in 0.67in 0.33in 0.67in; width:auto; font-size:12pt;} main {column-count:1;} h1 {font-size:2em;} } </style>
     <style>body{background-image:linear-gradient(transparent, var(--background)), url("../banner.webp");}</style>
 </head>
 
@@ -74,13 +73,13 @@
         In 2024, the city of Grand Junction
         <a href="https://www.gjcity.org/314/Utility-Rates">charges residents for city water use</a>
         on a tiered system: the more water you use, 
-        the more you’re charged <em>per gallon</em>.
+        the higher the rate you’re charged per gallon.
         Their rates can be distilled into 
         the following piecewise-defined function,
         where a resident is charged \(C(w)\) dollars for using
         \(w\) <em>thousand gallons</em> of water that month.
         \[
-            C\left(w\right) = \begin{cases}
+            C(w) = \begin{cases}
                 14.81 + 3.17w &\text{ if } 0 \lt w \leq 2 
                 \\21.15 + 4.01(w-2) &\text{ if } 2 \lt w \leq 10 
                 \\53.23 + 4.75(w-10) &\text{ if } 10 \lt w \leq 20
@@ -103,7 +102,7 @@
             <li class="skip-page">
                 Suppose a GJ resident tells you 
                 they had to pay $88 on their water bill.
-                How many gallons of what did they use that month?
+                How many gallons of water did they use that month?
             </li>
         </ol>
     </li>
@@ -111,9 +110,10 @@
 
 <h3>Challenge</h3>
 <p>
-    Tax rates in the US have a tiered structure
-    similar to the tiers at which Grand Junction residents
-    are charged different rates per water usage.
+    Similar to the tiers at which 
+    Grand Junction residents are charged per water usage,
+    the US government sets annual tax rates 
+    according to a tiered structure.
     The tiers in this case are called <em>tax brackets</em>.
 </p>
 <p>
@@ -121,12 +121,19 @@
     (and understand what it is)
     and the tax rates per tax bracket for this year,
     and come up with a function \(f,\)
-    which must be defined piece-wise,
-    that will describe exactly how much a person 
+    which must be defined piecewise,
+    that will describe exactly how much a single person 
     with \(x\) dollars of income for the year
     who takes the standard deduction
     will have to pay in taxes.
 </p>
+
+<!--
+<h3>Puzzle</h3>
+<p>
+    Einstein puzzle here?
+</p>
+-->
 
 </main>
 </body>

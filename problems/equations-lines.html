@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" media="all" href="../../assets/main.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <style> @media only print { body {margin:0.33in 0.67in 0.33in 0.67in; width:auto; font-size:12pt;} main {column-count:1;} h1 {font-size:2em;} } </style>
     <style>body{background-image:linear-gradient(transparent, var(--background)), url("../banner.webp");}</style>
 </head>
 
@@ -28,18 +27,24 @@
     <li class="skip-three">
         What is an equation for the line
         that passes through the point \((2,3)\)
-        and is is parallel to the line 
+        and is parallel to the line 
         given by the equation \(y = -\frac{1}{2}x+7?\)
+        Protip: it might help the sketch 
+        the initial line, the point, 
+        then the new line.
     </li>
     <li class="skip-page">
         What is an equation for the line
         that passes through the point \((-3,5)\)
-        and is is perpendicular to the line 
+        and is perpendicular to the line 
         given by the equation \(y = -\frac{1}{2}x+7?\)
+        Protip: it might help the sketch 
+        the initial line, the point, 
+        then the new line.
     </li>
     <li class="skip-four">
         Without appealing to technology,
-        explain, as if convincing a peer in the class,
+        explain, as if convincing a skeptical peer in the class,
         how you can tell that the three points
         \((-1,3)\) and \((1,-1)\) and \((5,-9)\)
         all lie on the same line.
@@ -68,18 +73,18 @@
     <li class="skip-two">
         The price of Johnson &amp; Johnson 
         (<a href="https://www.google.com/finance/quote/JNJ:NYSE">NYSE:JNJ</a>) stock 
-        closed at $151.63 per share on 28 Nov 2023,
+        closed at $156.74 per share on 29 Dec 2023,
         but closed at $137.49 per share on 29 Nov 2019.
-        What was the average <em>annual</em> change in share price
-        between these two dates?
         What was the average <em>monthly</em> change in share price
+        between these two dates?
+        What was the average <em>annual</em> change in share price
         between these two dates?
     </li>
     <li>
         <a href="https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=EMM_EPMMU_PTE_SCO_DPG&f=W">According to the US Energy Information Administration (EIA)</a>,
-        the price of mid-grade conventional retails gasoline in Colorado
+        the price of mid-grade conventional retail gasoline in Colorado
         was $1.99 at the beginning of May 2020,
-        but was $3.65 at the beginning of November 2023.
+        but was $3.02 at the beginning of January 2024.
         <ol>
             <li class="skip-one-half">
                 What was the average <em>monthly</em> change 
@@ -107,98 +112,175 @@
             </li>
             -->
             <li>
-                We built this model using only two data points. 
-                Maybe its not a very accurate of a model.
-                Plot this model over a scatterplot 
+                We built this model using only two data points,
+                so maybe its not a very accurate model.
+                Plot the graph \(y = p(t)\) over a scatterplot 
                 of the following data from EIA.
                 <figure>
                 <table>
-                <tbody>
-                    <tr> 
-                        <th>MonthYear</th> 
-                        <td>Jan2020</td> 
-                        <td>Mar2020</td> 
-                        <td>May2020</td> 
-                        <td>Jul2020</td> 
-                        <td>Sep2020</td> 
-                        <td>Nov2020</td> 
-                    </tr>
-                    <tr> 
-                        <th>Gas Price ($)</th> 
-                        <td>2.95</td> 
-                        <td>2.65</td> 
-                        <td>1.99</td> 
-                        <td>2.77</td> 
-                        <td>2.64</td> 
-                        <td>2.47</td> 
-                    </tr>
-                </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="2">2020</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr> 
+                            <th>Month</th> 
+                            <th>Price</th> 
+                        </tr> 
+                        <tr> 
+                            <td>January</td> 
+                            <td>$2.95</td> 
+                        </tr> 
+                        <tr> 
+                            <td>March</td> 
+                            <td>$2.65</td> 
+                        </tr> 
+                        <tr> 
+                            <td>May</td> 
+                            <td>$1.99</td> 
+                        </tr> 
+                        <tr> 
+                            <td>July</td> 
+                            <td>$2.77</td> 
+                        </tr> 
+                        <tr> 
+                            <td>September</td> 
+                            <td>$2.64</td> 
+                        </tr> 
+                        <tr> 
+                            <td>November</td> 
+                            <td>$2.47</td> 
+                        </tr>
+                    </tbody>
                 </table>
                 <table>
-                <tbody>
-                    <tr> 
-                        <th>MonthYear</th> 
-                        <td>Jan2021</td> 
-                        <td>Mar2021</td> 
-                        <td>May2021</td> 
-                        <td>Jul2021</td> 
-                        <td>Sep2021</td> 
-                        <td>Nov2021</td> 
-                    </tr>
-                    <tr> 
-                        <th>Price of Gas ($)</th> 
-                        <td>2.53</td> 
-                        <td>2.96</td> 
-                        <td>3.27</td> 
-                        <td>3.77</td> 
-                        <td>3.94</td> 
-                        <td>3.85</td> 
-                    </tr>
-                </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="2">2021</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr> 
+                            <th>Month</th> 
+                            <th>Price</th> 
+                        <tr> 
+                        </tr>
+                            <td>January</td> 
+                            <td>$2.53</td> 
+                        <tr> 
+                        </tr>
+                            <td>March</td> 
+                            <td>$2.96</td> 
+                        <tr> 
+                        </tr>
+                            <td>May</td> 
+                            <td>$3.27</td> 
+                        <tr> 
+                        </tr>
+                            <td>July</td> 
+                            <td>$3.77</td> 
+                        <tr> 
+                        </tr>
+                            <td>September</td> 
+                            <td>$3.94</td> 
+                        <tr> 
+                        </tr>
+                            <td>November</td> 
+                            <td>$3.85</td> 
+                        </tr>
+                    </tbody>
                 </table>
                 <table>
-                <tbody>
-                    <tr> 
-                        <th>MonthYear</th> 
-                        <td>Jan2022</td> 
-                        <td>Mar2022</td> 
-                        <td>May2022</td> 
-                        <td>Jul2022</td> 
-                        <td>Sep2022</td> 
-                        <td>Nov2022</td> 
-                    </tr>
-                    <tr> 
-                        <th>Price of Gas ($)</th> 
-                        <td>3.62</td> 
-                        <td>4.08</td> 
-                        <td>4.30</td> 
-                        <td>5.21</td> 
-                        <td>3.93</td> 
-                        <td>3.77</td> 
-                    </tr>
-                </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="2">2022</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr> 
+                            <th>Month</th> 
+                            <th>Price</th> 
+                        <tr> 
+                        </tr>
+                            <td>January</td> 
+                            <td>$3.62</td> 
+                        <tr> 
+                        </tr>
+                            <td>March</td> 
+                            <td>$4.08</td> 
+                        <tr> 
+                        </tr>
+                            <td>May</td> 
+                            <td>$4.30</td> 
+                        <tr> 
+                        </tr>
+                            <td>July</td> 
+                            <td>$5.21</td> 
+                        <tr> 
+                        </tr>
+                            <td>September</td> 
+                            <td>$3.93</td> 
+                        <tr> 
+                        </tr>
+                            <td>November</td> 
+                            <td>$3.77</td> 
+                        </tr>
+                    </tbody>
                 </table>
                 <table>
-                <tbody>
-                    <tr> 
-                        <th>MonthYear</th> 
-                        <td>Jan2023</td> 
-                        <td>Mar2023</td> 
-                        <td>May2023</td> 
-                        <td>Jul2023</td> 
-                        <td>Sep2023</td> 
-                        <td>Nov2023</td> 
-                    </tr>
-                    <tr> 
-                        <th>Price of Gas ($)</th> 
-                        <td>3.19</td> 
-                        <td>4.33</td> 
-                        <td>3.75</td> 
-                        <td>4.20</td> 
-                        <td>4.20</td> 
-                        <td>3.65</td> 
-                    </tr>
-                </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="2">2023</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr> 
+                            <th>Month</th> 
+                            <th>Price</th> 
+                        <tr> 
+                        </tr>
+                            <td>January</td> 
+                            <td>$3.19</td> 
+                        <tr> 
+                        </tr>
+                            <td>March</td> 
+                            <td>$4.33</td> 
+                        <tr> 
+                        </tr>
+                            <td>May</td> 
+                            <td>$3.75</td> 
+                        <tr> 
+                        </tr>
+                            <td>July</td> 
+                            <td>$4.20</td> 
+                        <tr> 
+                        </tr>
+                            <td>September</td> 
+                            <td>$4.20</td> 
+                        <tr> 
+                        </tr>
+                            <td>November</td> 
+                            <td>$3.65</td> 
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">2024</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr> 
+                            <th>Month</th> 
+                            <th>Price</th> 
+                        <tr> 
+                        </tr>
+                            <td>January</td> 
+                            <td>$3.02</td> 
+                        <tr> 
+                    </tbody>
                 </table>
                 </figure>
                 Visually, does \(p\) appears to be an accurate model?

@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" media="all" href="../../assets/main.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-    <style> @media only print { body {margin:0.33in 0.67in 0.33in 0.67in; width:auto; font-size:12pt;} main {column-count:1;} h1 {font-size:2em;} } </style>
     <style>body{background-image:linear-gradient(transparent, var(--background)), url("../banner.webp");}</style>
 </head>
 
@@ -26,10 +25,12 @@
 <div class="name print"></div>
 <ol>
     <li>
+        <p>
         Here’s data from the 
         <a href="https://www.eia.gov/energyexplained/us-energy-facts/">US Energy Information Administration (EIA)</a>
         on the total US energy supply coming from crude oil products, 
         in quadrillion BTUs (British thermal units).
+        </p>
         <figure>
         <table>
         <tbody>
@@ -67,22 +68,26 @@
         </table>
         </figure>
         <ol>
-            <li class="skip-two">
+            <li class="skip-one">
+                <p>
                 Letting your independent variable \(t\)
-                be the number of years since 1950,
-                use technology (preferably Desmos or Excel)
-                to find the cubic polynomial function
+                be the number of years since 1950, 
+                use technology to find the cubic polynomial function
+                <!-- (preferably Desmos or Excel) -->
                 and the quartic polynomial function
                 that best fit this data.
                 Write down the formulas for these functions below,
                 and plot the data along with 
                 the graphs of these two functions on these axes below
                 on the domain \(0 \leq t \leq 80.\)
-                (Protip: you don’t have to start the labels
-                for the tics on your \(y\)-axis at zero;)
-                decide what the minimum and maximum values 
+                </p>
+                <aside>
+                Protip: you don’t have to start the labels
+                for the tics on your \(y\)-axis at zero.
+                Decide what the minimum and maximum values 
                 of \(y\) you need to consider to get a good looking plot first, 
-                then label the \(y\)-axis.)
+                then label the \(y\)-axis.
+                </aside>
                 <figure> <img width="864" src="img/axes-firstquad/out.png"> </figure>
             </li>
             <li class="skip-one-half">
@@ -95,15 +100,14 @@
                 The cubic model achieves 
                 a local minimum value and a local maximum value 
                 on the domain \(0 \leq t \leq 80.\)
-                Using technology, find the exact coordinates
+                Using technology, find the approximate coordinates
                 of the points corresponding to this min and max,
                 and interpret the coordinates of those points
                 in the context of the situation we’re modelling.
             </li>
-            <li class="hard">
-                (Optional)
-                Using Desmos or Excel,
-                fit a polynomial function of degree higher than four
+            <li class="hard skip-page">
+                Using Desmos,
+                fit a polynomial function of degree higher than four 
                 to the data.
                 Can you find a high-degree polynomial
                 that appears to fit the data substantially better
@@ -111,13 +115,15 @@
             </li>
         </ol>
     </li>
-    <li class="skip-one">
-        What is the maximum number of times 
-        that the graph of a cubic polynomial
-        and the graph of a quartic polynomial
-        can possibly intersect each other?
-    </li>
 </ol>
+
+<h3>Challenge</h3>
+<p class="skip-two-half">
+    What is the maximum number of times 
+    that the graph of a cubic polynomial
+    and the graph of a quartic polynomial
+    can possibly intersect each other?
+</p>
 
 <h3>Puzzle</h3>
 <p>
