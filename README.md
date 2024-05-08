@@ -10,7 +10,7 @@ Chapters enumerated with § refer to
 
 ### How You Might Use these Materials
 
-  - **Harvest for Resources** – 
+  - **Harvest it for Resources** – 
 If you're teaching a similar course,
 there's likely overlap between the curriculum of your course and this one.
 Peruse [my instance of this course](https://org.coloradomesa.edu/~mapierce2/113/),
@@ -19,7 +19,7 @@ and look for any resources your students would appreciate.
   - **Fork/Clone it as a Template** – 
 If you're teaching a sufficiently similar class soon, 
 especially if you're also following the same textbook,
-forking or cloning this outline as an initial template,
+forking or cloning this repo as an initial template,
 styling it with your own CSS, and editing it 
 to fit your pacing and standards may save time.
 
