@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Math113 College Algebra Summary | Mike Pierce</title>
+    <meta name="author" content="Mike Pierce">
+
+    <link rel="shortcut icon" type="image/png" href="../../assets/favicon.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="all" href="../../assets/main.css"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <style media="print">
+        @page {size:letter; margin:0.4in 0.4in 0.4in 0.4in;}
+        h1 {font-size:32pt;} 
+        h2 {font-size:24pt; margin-top:18pt;} 
+        h3 {font-size:18pt;} 
+        body {font-size:9pt; line-height:12pt;} 
+        main {column-count:2; column-gap:0.2in; column-fill:auto;}
+    </style>
+    <style>body{background-image:linear-gradient(transparent, var(--background)), url("../banner.webp");}</style>
+</head>
+
+<body>
+<header>
+<h1>College Algebra Summary</h1>
+<ul>
+    <li> <a href="../..">Mike Pierce</a> </li>
+    <li> Math113 </li>
+    <li class="screen"> <a class="upwards" href="..">Course Outline</a> </li>
+    <li class="print"> Hosted at <a class="url" href="https://org.coloradomesa.edu/~mapierce2/113/summary">coloradomesa.edu/~mapierce2/113/summary</a> </li>
+</ul>
+</header>
+
+<main>
+<p>
+    Sometimes the purpose of taking a course 
+    becomes obfuscated over its duration;
+    it can become hard to appreciate the plot of a story 
+    when there’s too much exposition.
+    This narrative overview, in its brevity, 
+    serves to summarize the plot of this course
+    and to clarify our purpose,
+    for the sake of keeping both student and instructor 
+    focused on what’s important.
+</p>
+
+<p>
+    The intent of this course is to prepare students 
+    for studying with the faculty in their major departments.
+    This is <em>not</em> to say it covers every tidbit of math
+    a student might encounter in their major classes; that would be impossible.
+    Instead the goal is to build a basic level of mathematical “literacy” 
+    that a typical university faculty member assumes every student has.
+    That is, there is a base level of fluency in logic and reasoning,
+    and an awareness of the common canon of mathematical topics and ideas,
+    that every college student should have for the sake of 
+    effectively communicating and understanding academics.
+    This course’s purpose is to develop that literacy.
+</p>
+<p>
+    Structurally, the course is designed
+    as a tour through that common canon of topics and concepts,
+    but whereas the <em>topics</em> can be studied in sequence,
+    the <em>ideas</em> are better included as
+    themes that recur throughout the study of specific topics.
+    Let’s list those themes here
+    before describing the sequence of topics in this course.
+</p>
+<section>
+
+<section>
+<h2 id="themes">Recurring Themes</h2>
+
+<!-- SLO: Solve equations, inequalities, and systems of equations, and interpret solutions in context of applications. -->
+<!-- SLO: Use an appropriate method (algebraic, graphical, or computational) to solve problems involving linear, polynomial, rational, exponential, logarithmic, and inverse functions. -->
+<!-- SLO: Apply appropriate technologies such as calculators and spreadsheets to perform computations and analyze mathematical concepts. -->
+<h3 id="algebra">Algebra</h3>
+<p>
+    The namesake of this course, “algebra”, 
+    is a rather overloaded word.
+    In our context though it just boils down to 
+    <em>symbolically manipulating equations</em>.
+    The ability to represent mathematical statements 
+    symbolically in terms of numbers and variables, 
+    as opposed to having to write it out in language,
+    is a powerful tool if you can work with such representations.
+    I.e. the question <q>What number(s) when squared then tripled 
+    is equal to five more than half itself?</q>
+    is much easier to answer once you realize 
+    it’s the same as solving \(3x^2 = \frac{1}{2}x+5\) for \(x.\)
+    And as a modern extension of this, 
+    it’s important to be able to accurately transcribe 
+    an algebraic expression for a number into a computer/calculator 
+    to approximate its decimal value.
+</p>
+<ul>
+    <li>
+        <h4>Skill</h4>
+        Given an equation defined in terms of 
+        algebraic, exponential, and logarithmic operations,
+        be able to solve the equation for any variable.
+    </li>
+    <li>
+        <h4>Skill</h4>
+        Be able effectively use technology to compute 
+        a decimal approximation of a number expressed in terms of
+        algebraic, exponential, and logarithmic operations.
+    </li>
+</ul>
+
+<!-- SLO: Identify and describe behavior and properties of functions. -->
+<!-- SLO: Choose the type of function (linear, polynomial, rational, exponential, or logarithmic) that best applies in a given scenario. -->
+<!-- SLO: Sketch graphs of linear, polynomial, rational, exponential, logarithmic, and inverse functions and interpret graphs in context of applications. -->
+<!-- SLO: Use an appropriate method (algebraic, graphical, or computational) to solve problems involving linear, polynomial, rational, exponential, logarithmic, and inverse functions. -->
+<!-- SLO: Translate between geometric concepts and their algebraic representations. -->
+<h3 id="geometry">Analytic Geometry</h3>
+<p>
+    This idea, a relatively modern extension to the study of algebra,
+    is that every equation featuring variables has a geometric visualization.
+    Specifically in this course, for a function \(f,\)
+    the <dfn>graph</dfn> of \(f\) is the set of all points \((x,y)\)
+    in two-dimensional space such that \({y = f(x).}\)
+    The phrase <dfn>analytic geometry</dfn> refers to 
+    the study of functions via features of their graphs.
+    This idea is helpful because it affords us two perspectives,
+    an algebraic perspective and a geometric perspective,
+    on any situation involving a function.
+</p>
+<ul>
+    <li>
+        <h4>Skill</h4>
+        For any algebraic, exponential, logarithmic, or rational function,
+        given its formula be able to sketch the graph of the function,
+        or given its graph be able to deduce a plausible formula for the function.
+    </li>
+    <li>
+        <h4>Concept</h4>
+        Understand how the features of the formula for 
+        an algebraic, exponential, logarithmic, or rational function
+        relate to the geometry of its graph, and vice-versa,
+        and be able to view any facts about a function
+        from the perspective of both its formula and its graph.
+    </li>
+</ul>
+
+<!-- SLO: Solve equations, inequalities, and systems of equations, and interpret solutions in context of applications. -->
+<!-- SLO: Choose the type of function (linear, polynomial, rational, exponential, or logarithmic) that best applies in a given scenario. -->
+<!-- SLO: Use an appropriate method (algebraic, graphical, or computational) to solve problems involving linear, polynomial, rational, exponential, logarithmic, and inverse functions. -->
+<!-- SLO: Translate between geometric concepts and their algebraic representations. -->
+<h3 id="modelling">Modelling</h3>
+<p>
+    One utility of mathematics accessible in this course
+    is the use of functions to model phenomenon.
+    That is if we’re measuring something over time \(t,\)
+    it may be helpful to discover a function \(f\)
+    such that \(f(t)\) approximates that measurement at time \(t.\)
+    This function \(f\) affords us a better view into the phenomenon
+    beyond what we can explicitly measure. 
+</p>
+<p>
+    Given a collection of data \(\big\{(x_i, y_i)\big\},\)
+    per type of function (linear, exponential, etc) 
+    we can use a computer/calculator to perform <dfn>regression</dfn> 
+    to compute the formula for that type of function 
+    that “best fits” the data.
+    I.e. regression gives us a way to compute a function \(f\) 
+    such that \(f(x_i) \approx y_i\) for each data points,
+    which then serves as a model for the phenomenon.
+</p>
+<ul>
+    <li>
+        <h4>Skill</h4>
+        Be able to use technology to perform regression to commute the formula 
+        of a function that best fits data corresponding to a situation.
+    </li>
+    <li>
+        <h4>Concept</h4>
+        Understand how the algebraic or geometric properties of a function
+        that models a situation should be interpreted in that context.
+    </li>
+</ul>
+
+<!-- SLO: Communicate mathematical ideas and solutions to problems using correct mathematical notation and terminology. -->
+<!-- SLO: Communicate mathematical analysis symbolically, graphically, and in written language that clarifies/justifies/summarizes reasoning. -->
+<h3 id="literacy">Mathematical Literacy</h3>
+<p>
+    It’s also important to develop mathematical literacy 
+    in the more literal sense of literacy.
+    Mathematical symbols are 
+    <a href="https://en.wikipedia.org/wiki/Part_of_speech">parts-of-speech</a>
+    and so have a proper place in the English language,
+    and the exactness of mathematics demands mastery over vocabulary.
+    Effectively communicating is an important skill in general,
+    and so being able to incorporate mathematical elements 
+    into your writing and speech is a theme of this course.
+</p>
+<ul>
+    <li>
+        <h4>Skill</h4>
+        Be able to communicate mathematical ideas effectively,
+        using proper notation when necessary.
+    </li>
+</ul>
+<p>
+    All of these themes listed more plainly as personal goals:
+    be able to solve equations,
+    know the geometry behind equations,
+    know what the results of computations <em>mean</em> in context,
+    and be able to effectively talk/write about all of it.
+</p>
+</section>
+
+<section>
+<h2 id="topics">Mathematical Topics</h2>
+
+<h3 id="functions">Functions &amp; Graphs</h3>
+<p>
+    We start the course defining the main character 
+    of most all of modern mathematics, the function.
+    A <dfn>function</dfn>, in general, is a correspondence
+    between some set of inputs and some set of outputs, 
+    but in this class those sets will always be 
+    large subsets of the real numbers.
+    Most quantities in our world are modelled by real numbers,    
+    and so phenomenon in our world 
+    can be usefully modelled by such functions.
+    <!--
+    For a function \(f,\) given \(\square\) as input
+    the output of \(f\) corresponding to that input 
+    is denoted \(f(\square).\)
+    If \(f\) is defined by a formula, 
+    conventionally \(x\) is used in place of \(\square\)
+    and \(f(x)\) is notation for the formula of \(f.\)
+    -->
+    The <dfn>domain</dfn> of a function \(f\) 
+    is the largest subset of the real numbers 
+    that may serve as inputs to \(f\),
+    and the <dfn>range</dfn> of a function
+    is the set of all its possible outputs.
+</p>
+<ul>
+    <li>
+        <h4>Concept</h4>
+        Understand what a function <em>is</em>
+        and the notation commonly used to denote 
+        information about functions.
+    </li>
+</ul>
+<p>
+    And naturally here we introduce 
+    the <a href=#geometry">graph of a function</a>.
+</p>
+</section>
+
+<section>
+<h3 id="lines">Linear Functions</h3>
+<p>
+    After discussing functions in general,
+    the first specific example that we analyze in depth
+    are linear functions, named so for the shape of their graph.
+    A <dfn>linear function</dfn> \(f\) 
+    has a formula of the template \(f(x) = mx+b.\)
+    The two parameters \(m\) and \(b\) have natural interpretations
+    in terms of a linear function’s graph:
+    the number \(b\) is where the graph intersects the \(y\)-axis,
+    and number \(m\) is the <dfn>slope</dfn> of the graph,
+    the amount it changes in the \(y\) direction 
+    per change of \(1\) unit in the \(x\) direction.
+    Beyond understanding lines in view of the 
+    <a href="#themes">themes of the course</a>,
+    there is one skill worth mentioning specifically:
+</p>
+<ul>
+    <li>
+        <h4>Skill</h4>
+        Given two points in space, 
+        be able to calculate an equation 
+        for the unique line that passes through those points.
+    </li>
+</ul>
+<p>
+    Then lastly, before concluding our study of linear functions,
+    we’ll practice analyzing multiple lines simultaneously
+    in both the context of their algebra and geometry.
+</p>
+<ul>
+    <li>
+        <h4>Skill</h4>
+        Given two lines in space,
+        be able to calculate the point at which they intersects
+        or determine that they are parallel.
+    </li>
+</ul>
+</section>
+
+<section>
+<h3 id="quadratics">Quadratic Functions</h3>
+<p>
+    After lines we’ll study the next-simplest sort 
+    of algebraic function, quadratic polynomials.
+    A <dfn>quadratic polynomial</dfn> function of \(x\)
+    has a formula \(f(x)\)that <em>may</em> be written 
+    in any one of the following forms,
+    \[ ax^2+bx+c \qquad a(x-h)^2+k \qquad a(x-r_1)(x-r_2) \]
+    referred to as <em>standard form</em>, <em>vertex form</em>,
+    and <em>factored form</em> respectively.
+    The numbers \(r_1\) and \(r_2\) in the factored form,
+    if they exist, are called the <dfn>roots</dfn> of \(f\)
+    and satisfy \(f(r_1)=0\) and \(f(r_2)=0.\)
+    Because \(f\) may not have real roots, 
+    it may not have a factored form.
+</p>
+<ul>
+    <li>
+        <h4>Skill</h4>
+        Given the formula for a quadratic function,
+        be able to re-write it any of these forms.
+    </li>
+</ul>
+<p>
+    The graph of a quadratic function is called a <dfn>parabola</dfn>,
+    and each of these forms encodes different information
+    about the geometry to the corresponding parabola:
+    the vertex of the parabola is located at \((h,k),\)
+    the \(x\)-intercepts of the parabola (if they exist)
+    are located at \((r_1,0)\) and \((r_2,0),\)
+    the \(y\)-intercept of the parabola is located at \((0,c),\)
+    and the values of \(a\) and \(b\) correspond to
+    the rate at which the outputs are changing with respect to the inputs.
+</p>
+</section>
+
+<section>
+<h3 id="misc">Miscellaneous Topics on Algebraic Functions</h3>
+<p>
+    After studying linear and quadratic functions
+    we introduce one more examples of function
+    before discussing some miscellaneous topics about functions:
+</p>
+<p>
+    <strong>Power Functions. </strong>
+    A <dfn>power function</dfn> of \(x\) has a formula 
+    of the template \(ax^b\) for any real number \(b.\)
+    These functions are referred to as <dfn>root functions</dfn>
+    in the case that \(0 \lt b \lt 1\) since,
+    as a notational convention, \(x^{1/n} = \sqrt[n]{x}.\)
+</p>
+<p>
+    <strong>Piecewise-Defined Functions. </strong>
+    All of the examples of the functions so far 
+    have been defined by a single formula,
+    but this isn’t necessarily true of functions,
+    A function defined in terms of cases, 
+    defined differently on different pieces of its domain,
+    is called a <dfn>piecewise-defined</dfn> function.
+</p>
+<p>
+    <strong>Transformations of Functions. </strong>
+    Focusing heavily for a moment on the 
+    <a href="#themes">general theme of analytic geometry</a>,
+    we study what basic algebraic augmentations 
+    to the formula of a function do to transform the shape of its graph.
+</p>
+<ul>
+    <li>
+        <h4>Skill</h4>
+        Given the graph \(y = f(x),\)
+        be able to sketch the graph \(y = af(cx+d)+b.\)
+    </li>
+</ul>
+<p>
+    <strong>Algebraic Operations on Functions. </strong>
+    We return briefly to the study of functions via their formulas,
+    and define the operations \(+\) and \(-\) and \(\times\) and \(\div\)
+    on functions based on those operations’ definitions on their outputs.
+    We do define a single new operation on functions though, 
+    their <dfn>composite</dfn>, indicated with the symbol \(\circ,\)
+    defined to be the function regarded as the two functions applied in serial,
+    resulting from taking the outputs of the first function 
+    as the inputs of the second.
+</p>
+<ul>
+    <li>
+        <h4>Skill</h4>
+        Given formulas for functions \(f\) and \(g\)
+        be able to write down formulas for the functions
+        \(f\pm g,\) \(f\times g,\) \(f \div g,\) and \(f \circ g.\)
+    </li>
+</ul>
+<p>
+    <strong>Functions and their Inverses. </strong>
+    We say a function is <dfn>one-to-one</dfn> 
+    if every output of the function corresponds to a unique input.
+    We say a function \(f\) is <dfn>invertible</dfn>
+    if there exists an function \(f^{-1},\) an inverse to \(f,\)
+    such that \(f\big(f^{-1}(x)\big) = x\) and \(f^{-1}\big(f(x)\big) = x.\)
+    It turns out a function is one-to-one if and only if it’s invertible.
+</p>
+<ul>
+    <li>
+        <h4>Skill</h4>
+        Given a one-to-one function defined by a formula 
+        featuring a single instance of its independent variable,
+        be able to write a formula for the inverse of that function.
+    </li>
+</ul>
+</section>
+
+<section>
+<h3 id="exp-log">Exponential &amp; Logarithmic Functions</h3>
+<aside>
+    Exponential and logarithmic functions are examples
+    of what are called transcendental functions,
+    which are definitively <em>not</em> algebraic.
+    However I’ve yet to meet another professional 
+    who is bothered by their inclusion in a College <em>Algebra</em> course.
+</aside>
+<p>
+    Next in the course we transcend algebra to talk about
+    <dfn>exponential functions</dfn> of the form \(ab^x\)
+    (notably the variable \(x\) is in the exponent)
+    and their inverse <dfn>logarithmic functions</dfn>.
+    We will spend a lot of time going over 
+    the mathematical mechanics of these functions
+    before looking into their applications.
+</p>
+<p>
+    Exponential functions model measurements that are 
+    “growing at a rate proportional to their current size,”
+    which makes them apt for studying 
+    population growth, disease spread, and finances.
+    We look at this last example in depth,
+    developing formulas for calculating compounding interest 
+    and for savings- and payout-annuities.
+    Given a principle balance of \(P\) dollars 
+    invested at an annual interest rate of \(r\) 
+    compounded \(n\) times per year,
+    the total balance after \(t\) years will be 
+    \[ P\bigg(1+\frac{r}{n}\bigg)^{nt}. \]
+    If instead of being a one-time principle investment
+    \(P\) was instead a regular deposit 
+    into an (initially empty) account
+    made as often as the account earns interest,
+    then the balance \(S\) after \(t\) years would be 
+    \[ S = P\left(\frac{\Big(1+\frac{r}{n}\Big)^{nt}-1}{\frac{r}{n}}\right) \,.  \]
+    If however the account has an initial balance of \(S\) dollars
+    and each \(P\) is working towards paying off that balance, 
+    then the value of \(S\) after \(t\) years is
+    \[ S = P\left(\frac{1-\Big(1+\frac{r}{n}\Big)^{-nt}}{\frac{r}{n}}\right) \,.  \]
+</p>
+<p>
+    Briefly we introduce two other, more sophisticated functions 
+    in the “exponential” family, 
+    the <dfn>logistic</dfn> function and <dfn>Gompertz</dfn> function
+    with these templates as function of \(x\)
+    \[ \frac{C}{1 + a\mathrm{e}^{-bx}} \qquad \qquad C\alpha^{r^x} \]
+    respectively. The motivation for their introduction
+    is the desire to have bounded variations 
+    of the typical exponential functions;
+    each of these functions ranges are bounded above by \(C.\)
+</p>
+</section>
+
+<section>
+<h3 id="polynomial">Polynomial &amp; Rational Functions</h3>
+<p>
+    To conclude this course we address some of the patterns we noticed
+    studying linear and quadratic functions earlier,
+    and generalize them to polynomials of arbitrary degree.
+    A <dfn>polynomial</dfn>, in full generality, is any function
+    that can be defined in terms of applying
+    only the operations \(\pm\) and \(\times\) to its input.
+    Such a function’s formula has the template
+    \[ a_nx^n + x_{n-1}x^{n-1} + \dotsb + a_2x^2 + a_1x + a_0\,. \]
+    Much of the study of polynomials, like in the case of 
+    <a href="#quadratics">quadratics</a>,
+    comes down to finding their roots.
+    We examine specific cases of degree-three (<dfn>cubic</dfn>)
+    and degree-four (<dfn>quartic</dfn>) polynomials that we can factor,
+    and we see how knowing a single root of a polynomial
+    allows us to factor at least a linear term from it.
+</p>
+<ul>
+    <li>
+        <h4>Skill</h4>
+        Given a polynomial \(f\) with root \(r\)
+        be able to calculate the quotient \(q\) such that
+        \[ f(x) = (x-r)\times q(x)\,.  \]
+    </li>
+</ul>
+<p>
+    This leads to a couple natural questions: 
+    Can all the roots be factored out from a polynomial one-at-a-time?
+    How many roots does a given polynomial have?
+    The answer to the first questions is <q>yes</q>,
+    whereas the second is more complicated in general.
+    After diving in the nuance of that second question for a bit,
+    we introduce <dfn>complex numbers</dfn>, 
+    numbers of the form \(a+b\mathfrak{i}\) 
+    where \(a\) and \(b\) are real and \(\mathfrak{i}^2 = -1,\)
+    and explain that their sole purpose is to provide 
+    a simple answer to that second question.
+</p>
+<p class="theorem" title="Fundamental Theorem of Algebra">
+    Any polynomial function with complex coefficients
+    factors completely over the complex numbers.
+</p>
+<p>
+    And then we briefly introduce <dfn>rational functions</dfn>,
+    which are any function that can be defined in terms of applying
+    only the operations \(\pm,\) \(\times,\) and \(\div\) to its input.
+    Any rational function can be written as the quotient of two polynomials.
+    The roots of this “numerator” polynomial 
+    are referred to as the roots of the rational function,
+    whereas the roots of the “denominator”
+    are called <dfn>poles</dfn> of the rational function
+    and correspond to vertical asymptotes in the function’s graph.
+</p>
+</section>
+</main>
+
+<footer>
+<ul>
+    <li> © <a href="https://org.coloradomesa.edu/~mapierce2/">Mike Pierce</a> </li>
+</ul>
+</footer>
+</body>
+
+</html>
+
